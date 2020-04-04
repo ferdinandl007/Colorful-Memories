@@ -1,0 +1,64 @@
+PODS:
+  - Alamofire (5.0.5)
+  - IGListDiffKit (4.0.0)
+  - IGListKit (4.0.0):
+    - IGListDiffKit (= 4.0.0)
+  - PokerCard (0.1.0)
+  - PryntTrimmerView (4.0.0)
+  - Reusable (4.1.1):
+    - Reusable/Storyboard (= 4.1.1)
+    - Reusable/View (= 4.1.1)
+  - Reusable/Storyboard (4.1.1)
+  - Reusable/View (4.1.1)
+  - SPPermissions (5.3):
+    - SPPermissions/Core (= 5.3)
+  - SPPermissions/Camera (5.3):
+    - SPPermissions/Core
+  - SPPermissions/Core (5.3)
+  - SPPermissions/PhotoLibrary (5.3):
+    - SPPermissions/Core
+  - SteviaLayout (4.7.3)
+  - WeScan (1.5.0)
+  - YPImagePicker (4.2.0):
+    - PryntTrimmerView (~> 4.0.0)
+    - SteviaLayout (~> 4.7.3)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.0)
+  - IGListKit (~> 4.0.0)
+  - PokerCard
+  - Reusable
+  - SPPermissions
+  - SPPermissions/Camera
+  - SPPermissions/PhotoLibrary
+  - WeScan (>= 0.9)
+  - YPImagePicker
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - IGListDiffKit
+    - IGListKit
+    - PokerCard
+    - PryntTrimmerView
+    - Reusable
+    - SPPermissions
+    - SteviaLayout
+    - WeScan
+    - YPImagePicker
+
+SPEC CHECKSUMS:
+  Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
+  IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
+  IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
+  PokerCard: 64aa37bfb9f7cb7f14ec3a89e1dbce62821fbd19
+  PryntTrimmerView: 67e67573ffd4c073f1308effa66aefd0cfa667a0
+  Reusable: 53a9acf5c536f229b31b5865782414b508252ddb
+  SPPermissions: a8056ef987855e8b231481f61bd8b4cbd3fcfd80
+  SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
+  WeScan: b2e47d07f5da3dbf3db14b742e403a8924cf32b2
+  YPImagePicker: accf310f9526641a84372c0ecf943547d9b1e52c
+
+PODFILE CHECKSUM: 739b132f937a75bc9c438d2b786e1e7a6c8077d2
+
+COCOAPODS: 1.9.1

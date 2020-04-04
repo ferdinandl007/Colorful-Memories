@@ -1,0 +1,927 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12B5C92F49D6BC599A24302E /* Pods_Colorful_memories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8B488869A4BF7856120FBA /* Pods_Colorful_memories.framework */; };
+		CF19A5F12435DA2C00CCAB45 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF19A5F02435DA2C00CCAB45 /* StoreKit.framework */; };
+		CF19A5F32435F96900CCAB45 /* IAP_ProductIDs.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF19A5F22435F96900CCAB45 /* IAP_ProductIDs.plist */; };
+		CF19A5F52435F9FF00CCAB45 /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF19A5F42435F9FF00CCAB45 /* IAPManager.swift */; };
+		CF249F752434C06E00B7672F /* ActionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF249F732434C06E00B7672F /* ActionsCell.swift */; };
+		CF249F762434C06E00B7672F /* ActionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF249F742434C06E00B7672F /* ActionsCell.xib */; };
+		CF5DF5B824338EC000C1C6D7 /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5DF5B724338EC000C1C6D7 /* CircularProgressBar.swift */; };
+		CF5DF5BA243393F000C1C6D7 /* ImagesSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5DF5B9243393F000C1C6D7 /* ImagesSectionController.swift */; };
+		CF88F89E2430BB2400641100 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88F89D2430BB2400641100 /* AppDelegate.swift */; };
+		CF88F8A02430BB2400641100 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88F89F2430BB2400641100 /* SceneDelegate.swift */; };
+		CF88F8A52430BB2400641100 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF88F8A32430BB2400641100 /* Main.storyboard */; };
+		CF88F8A72430BB2600641100 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF88F8A62430BB2600641100 /* Assets.xcassets */; };
+		CF88F8AA2430BB2600641100 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF88F8A82430BB2600641100 /* LaunchScreen.storyboard */; };
+		CF88F8B52430BB2700641100 /* Colorful_memoriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88F8B42430BB2700641100 /* Colorful_memoriesTests.swift */; };
+		CF88F8C02430BB2700641100 /* Colorful_memoriesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88F8BF2430BB2700641100 /* Colorful_memoriesUITests.swift */; };
+		CF88F8D22430C1E900641100 /* HedarSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88F8D12430C1E900641100 /* HedarSectionController.swift */; };
+		CF88F8D52430C25600641100 /* NSObject+ListDiffable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88F8D42430C25600641100 /* NSObject+ListDiffable.swift */; };
+		CF88F8D92430C3E500641100 /* HeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88F8D82430C3E500641100 /* HeaderModel.swift */; };
+		CF88F8DC2430C49700641100 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88F8DA2430C49700641100 /* HeaderCell.swift */; };
+		CF88F8DD2430C49700641100 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF88F8DB2430C49700641100 /* HeaderCell.xib */; };
+		CF88F8E32430D95800641100 /* itemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF88F8E12430D95800641100 /* itemCell.xib */; };
+		CF88F8E42430D95800641100 /* itemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88F8E22430D95800641100 /* itemCell.swift */; };
+		CF88F8E82430DAD100641100 /* imageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88F8E62430DAD100641100 /* imageCell.swift */; };
+		CF88F8E92430DAD100641100 /* imageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF88F8E72430DAD100641100 /* imageCell.xib */; };
+		CF88F8EB2430DDDA00641100 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88F8EA2430DDDA00641100 /* ViewController.swift */; };
+		CFF438C8243774FA00AE4DB3 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF438C7243774FA00AE4DB3 /* Networking.swift */; };
+		CFF438CA243862C800AE4DB3 /* RepeatingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF438C9243862C800AE4DB3 /* RepeatingTimer.swift */; };
+		D93859E5AD0A825064894E49 /* Pods_Colorful_memoriesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56BA8BB5EC17E10587E7453F /* Pods_Colorful_memoriesTests.framework */; };
+		E64EFABCE30B186494FF71E5 /* Pods_Colorful_memories_Colorful_memoriesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B36E57B92378AC7FBA9F2F3 /* Pods_Colorful_memories_Colorful_memoriesUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF88F8B12430BB2700641100 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF88F8922430BB2400641100 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF88F8992430BB2400641100;
+			remoteInfo = "Colorful-memories";
+		};
+		CF88F8BC2430BB2700641100 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF88F8922430BB2400641100 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF88F8992430BB2400641100;
+			remoteInfo = "Colorful-memories";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1494E03CB2E6AA0C9ECF54AB /* Pods-Colorful-memoriesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Colorful-memoriesTests.release.xcconfig"; path = "Target Support Files/Pods-Colorful-memoriesTests/Pods-Colorful-memoriesTests.release.xcconfig"; sourceTree = "<group>"; };
+		1B36E57B92378AC7FBA9F2F3 /* Pods_Colorful_memories_Colorful_memoriesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Colorful_memories_Colorful_memoriesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56BA8BB5EC17E10587E7453F /* Pods_Colorful_memoriesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Colorful_memoriesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B8B488869A4BF7856120FBA /* Pods_Colorful_memories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Colorful_memories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82023C3355D834065758581F /* Pods-Colorful-memories-Colorful-memoriesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Colorful-memories-Colorful-memoriesUITests.debug.xcconfig"; path = "Target Support Files/Pods-Colorful-memories-Colorful-memoriesUITests/Pods-Colorful-memories-Colorful-memoriesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		95D89016AA6BE6986144F01A /* Pods-Colorful-memoriesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Colorful-memoriesTests.debug.xcconfig"; path = "Target Support Files/Pods-Colorful-memoriesTests/Pods-Colorful-memoriesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9739624986CC5207D890FEE2 /* Pods-Colorful-memories-Colorful-memoriesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Colorful-memories-Colorful-memoriesUITests.release.xcconfig"; path = "Target Support Files/Pods-Colorful-memories-Colorful-memoriesUITests/Pods-Colorful-memories-Colorful-memoriesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		97DD9CEC95A03B97D5694DF4 /* Pods-Colorful-memories.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Colorful-memories.debug.xcconfig"; path = "Target Support Files/Pods-Colorful-memories/Pods-Colorful-memories.debug.xcconfig"; sourceTree = "<group>"; };
+		B7F08CE1BEFA72E049F2D1E8 /* Pods-Colorful-memories.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Colorful-memories.release.xcconfig"; path = "Target Support Files/Pods-Colorful-memories/Pods-Colorful-memories.release.xcconfig"; sourceTree = "<group>"; };
+		CF19A5F02435DA2C00CCAB45 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		CF19A5F22435F96900CCAB45 /* IAP_ProductIDs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = IAP_ProductIDs.plist; sourceTree = "<group>"; };
+		CF19A5F42435F9FF00CCAB45 /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
+		CF249F732434C06E00B7672F /* ActionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsCell.swift; sourceTree = "<group>"; };
+		CF249F742434C06E00B7672F /* ActionsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionsCell.xib; sourceTree = "<group>"; };
+		CF5DF5B724338EC000C1C6D7 /* CircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
+		CF5DF5B9243393F000C1C6D7 /* ImagesSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesSectionController.swift; sourceTree = "<group>"; };
+		CF88F89A2430BB2400641100 /* Colorful-memories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Colorful-memories.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF88F89D2430BB2400641100 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF88F89F2430BB2400641100 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CF88F8A42430BB2400641100 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF88F8A62430BB2600641100 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF88F8A92430BB2600641100 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF88F8AB2430BB2600641100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF88F8B02430BB2700641100 /* Colorful-memoriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Colorful-memoriesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF88F8B42430BB2700641100 /* Colorful_memoriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colorful_memoriesTests.swift; sourceTree = "<group>"; };
+		CF88F8B62430BB2700641100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF88F8BB2430BB2700641100 /* Colorful-memoriesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Colorful-memoriesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF88F8BF2430BB2700641100 /* Colorful_memoriesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colorful_memoriesUITests.swift; sourceTree = "<group>"; };
+		CF88F8C12430BB2700641100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF88F8D12430C1E900641100 /* HedarSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HedarSectionController.swift; sourceTree = "<group>"; };
+		CF88F8D42430C25600641100 /* NSObject+ListDiffable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ListDiffable.swift"; sourceTree = "<group>"; };
+		CF88F8D82430C3E500641100 /* HeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderModel.swift; sourceTree = "<group>"; };
+		CF88F8DA2430C49700641100 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		CF88F8DB2430C49700641100 /* HeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
+		CF88F8E12430D95800641100 /* itemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = itemCell.xib; sourceTree = "<group>"; };
+		CF88F8E22430D95800641100 /* itemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = itemCell.swift; sourceTree = "<group>"; };
+		CF88F8E62430DAD100641100 /* imageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageCell.swift; sourceTree = "<group>"; };
+		CF88F8E72430DAD100641100 /* imageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = imageCell.xib; sourceTree = "<group>"; };
+		CF88F8EA2430DDDA00641100 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CFC3DABE24323883002042A8 /* Colorful-memories.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Colorful-memories.entitlements"; sourceTree = "<group>"; };
+		CFF438C7243774FA00AE4DB3 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		CFF438C9243862C800AE4DB3 /* RepeatingTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingTimer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF88F8972430BB2400641100 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12B5C92F49D6BC599A24302E /* Pods_Colorful_memories.framework in Frameworks */,
+				CF19A5F12435DA2C00CCAB45 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF88F8AD2430BB2700641100 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D93859E5AD0A825064894E49 /* Pods_Colorful_memoriesTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF88F8B82430BB2700641100 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E64EFABCE30B186494FF71E5 /* Pods_Colorful_memories_Colorful_memoriesUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FF3EF633E66049117F917A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF19A5F02435DA2C00CCAB45 /* StoreKit.framework */,
+				5B8B488869A4BF7856120FBA /* Pods_Colorful_memories.framework */,
+				1B36E57B92378AC7FBA9F2F3 /* Pods_Colorful_memories_Colorful_memoriesUITests.framework */,
+				56BA8BB5EC17E10587E7453F /* Pods_Colorful_memoriesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF19A5F62435FE9C00CCAB45 /* In-App Purchases */ = {
+			isa = PBXGroup;
+			children = (
+				CF19A5F22435F96900CCAB45 /* IAP_ProductIDs.plist */,
+				CF19A5F42435F9FF00CCAB45 /* IAPManager.swift */,
+				CFF438C7243774FA00AE4DB3 /* Networking.swift */,
+				CFF438C9243862C800AE4DB3 /* RepeatingTimer.swift */,
+			);
+			path = "In-App Purchases";
+			sourceTree = "<group>";
+		};
+		CF5DF5B624338EB300C1C6D7 /* CircularProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				CF5DF5B724338EC000C1C6D7 /* CircularProgressBar.swift */,
+			);
+			path = CircularProgressBar;
+			sourceTree = "<group>";
+		};
+		CF88F8912430BB2400641100 = {
+			isa = PBXGroup;
+			children = (
+				CF88F89C2430BB2400641100 /* Colorful-memories */,
+				CF88F8B32430BB2700641100 /* Colorful-memoriesTests */,
+				CF88F8BE2430BB2700641100 /* Colorful-memoriesUITests */,
+				CF88F89B2430BB2400641100 /* Products */,
+				E6C76D0F5E7DB610CE1DA743 /* Pods */,
+				1FF3EF633E66049117F917A3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CF88F89B2430BB2400641100 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF88F89A2430BB2400641100 /* Colorful-memories.app */,
+				CF88F8B02430BB2700641100 /* Colorful-memoriesTests.xctest */,
+				CF88F8BB2430BB2700641100 /* Colorful-memoriesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF88F89C2430BB2400641100 /* Colorful-memories */ = {
+			isa = PBXGroup;
+			children = (
+				CF19A5F62435FE9C00CCAB45 /* In-App Purchases */,
+				CFC3DABE24323883002042A8 /* Colorful-memories.entitlements */,
+				CF88F8CD2430C12C00641100 /* Model */,
+				CF88F8CE2430C13400641100 /* View */,
+				CF88F8D02430C15400641100 /* SectionController */,
+				CF88F8CF2430C14200641100 /* Controller */,
+				CF88F89D2430BB2400641100 /* AppDelegate.swift */,
+				CF88F89F2430BB2400641100 /* SceneDelegate.swift */,
+				CF88F8A32430BB2400641100 /* Main.storyboard */,
+				CF88F8D32430C23400641100 /* Exten */,
+				CF88F8A62430BB2600641100 /* Assets.xcassets */,
+				CF88F8A82430BB2600641100 /* LaunchScreen.storyboard */,
+				CF88F8AB2430BB2600641100 /* Info.plist */,
+			);
+			path = "Colorful-memories";
+			sourceTree = "<group>";
+		};
+		CF88F8B32430BB2700641100 /* Colorful-memoriesTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF88F8B42430BB2700641100 /* Colorful_memoriesTests.swift */,
+				CF88F8B62430BB2700641100 /* Info.plist */,
+			);
+			path = "Colorful-memoriesTests";
+			sourceTree = "<group>";
+		};
+		CF88F8BE2430BB2700641100 /* Colorful-memoriesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF88F8BF2430BB2700641100 /* Colorful_memoriesUITests.swift */,
+				CF88F8C12430BB2700641100 /* Info.plist */,
+			);
+			path = "Colorful-memoriesUITests";
+			sourceTree = "<group>";
+		};
+		CF88F8CD2430C12C00641100 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF88F8D82430C3E500641100 /* HeaderModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF88F8CE2430C13400641100 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF5DF5B624338EB300C1C6D7 /* CircularProgressBar */,
+				CF88F8E52430DA7600641100 /* imageCell */,
+				CF88F8E02430D95700641100 /* item */,
+				CF88F8DE2430D91300641100 /* Header */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF88F8CF2430C14200641100 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF88F8EA2430DDDA00641100 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CF88F8D02430C15400641100 /* SectionController */ = {
+			isa = PBXGroup;
+			children = (
+				CF88F8D12430C1E900641100 /* HedarSectionController.swift */,
+				CF5DF5B9243393F000C1C6D7 /* ImagesSectionController.swift */,
+			);
+			path = SectionController;
+			sourceTree = "<group>";
+		};
+		CF88F8D32430C23400641100 /* Exten */ = {
+			isa = PBXGroup;
+			children = (
+				CF88F8D42430C25600641100 /* NSObject+ListDiffable.swift */,
+			);
+			path = Exten;
+			sourceTree = "<group>";
+		};
+		CF88F8DE2430D91300641100 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				CF88F8DB2430C49700641100 /* HeaderCell.xib */,
+				CF88F8DA2430C49700641100 /* HeaderCell.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		CF88F8E02430D95700641100 /* item */ = {
+			isa = PBXGroup;
+			children = (
+				CF88F8E12430D95800641100 /* itemCell.xib */,
+				CF88F8E22430D95800641100 /* itemCell.swift */,
+			);
+			path = item;
+			sourceTree = "<group>";
+		};
+		CF88F8E52430DA7600641100 /* imageCell */ = {
+			isa = PBXGroup;
+			children = (
+				CF88F8E62430DAD100641100 /* imageCell.swift */,
+				CF249F732434C06E00B7672F /* ActionsCell.swift */,
+				CF249F742434C06E00B7672F /* ActionsCell.xib */,
+				CF88F8E72430DAD100641100 /* imageCell.xib */,
+			);
+			path = imageCell;
+			sourceTree = "<group>";
+		};
+		E6C76D0F5E7DB610CE1DA743 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97DD9CEC95A03B97D5694DF4 /* Pods-Colorful-memories.debug.xcconfig */,
+				B7F08CE1BEFA72E049F2D1E8 /* Pods-Colorful-memories.release.xcconfig */,
+				82023C3355D834065758581F /* Pods-Colorful-memories-Colorful-memoriesUITests.debug.xcconfig */,
+				9739624986CC5207D890FEE2 /* Pods-Colorful-memories-Colorful-memoriesUITests.release.xcconfig */,
+				95D89016AA6BE6986144F01A /* Pods-Colorful-memoriesTests.debug.xcconfig */,
+				1494E03CB2E6AA0C9ECF54AB /* Pods-Colorful-memoriesTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF88F8992430BB2400641100 /* Colorful-memories */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF88F8C42430BB2700641100 /* Build configuration list for PBXNativeTarget "Colorful-memories" */;
+			buildPhases = (
+				C3A3324D52B3250B364F68D1 /* [CP] Check Pods Manifest.lock */,
+				CF88F8962430BB2400641100 /* Sources */,
+				CF88F8972430BB2400641100 /* Frameworks */,
+				CF88F8982430BB2400641100 /* Resources */,
+				3185ECAB1ACE3CE9FEA17ADC /* [CP] Embed Pods Frameworks */,
+				CF5DF5BB243399C100C1C6D7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Colorful-memories";
+			productName = "Colorful-memories";
+			productReference = CF88F89A2430BB2400641100 /* Colorful-memories.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF88F8AF2430BB2700641100 /* Colorful-memoriesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF88F8C72430BB2700641100 /* Build configuration list for PBXNativeTarget "Colorful-memoriesTests" */;
+			buildPhases = (
+				9EA84BD6A0E9A582CB3D6E25 /* [CP] Check Pods Manifest.lock */,
+				CF88F8AC2430BB2700641100 /* Sources */,
+				CF88F8AD2430BB2700641100 /* Frameworks */,
+				CF88F8AE2430BB2700641100 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF88F8B22430BB2700641100 /* PBXTargetDependency */,
+			);
+			name = "Colorful-memoriesTests";
+			productName = "Colorful-memoriesTests";
+			productReference = CF88F8B02430BB2700641100 /* Colorful-memoriesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF88F8BA2430BB2700641100 /* Colorful-memoriesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF88F8CA2430BB2700641100 /* Build configuration list for PBXNativeTarget "Colorful-memoriesUITests" */;
+			buildPhases = (
+				1356C935D5F22E5F46AD51D1 /* [CP] Check Pods Manifest.lock */,
+				CF88F8B72430BB2700641100 /* Sources */,
+				CF88F8B82430BB2700641100 /* Frameworks */,
+				CF88F8B92430BB2700641100 /* Resources */,
+				14B4663F41ADF703F6A8D2D3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF88F8BD2430BB2700641100 /* PBXTargetDependency */,
+			);
+			name = "Colorful-memoriesUITests";
+			productName = "Colorful-memoriesUITests";
+			productReference = CF88F8BB2430BB2700641100 /* Colorful-memoriesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF88F8922430BB2400641100 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Ferdinand Lösch";
+				TargetAttributes = {
+					CF88F8992430BB2400641100 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					CF88F8AF2430BB2700641100 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = CF88F8992430BB2400641100;
+					};
+					CF88F8BA2430BB2700641100 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = CF88F8992430BB2400641100;
+					};
+				};
+			};
+			buildConfigurationList = CF88F8952430BB2400641100 /* Build configuration list for PBXProject "Colorful-memories" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF88F8912430BB2400641100;
+			productRefGroup = CF88F89B2430BB2400641100 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF88F8992430BB2400641100 /* Colorful-memories */,
+				CF88F8AF2430BB2700641100 /* Colorful-memoriesTests */,
+				CF88F8BA2430BB2700641100 /* Colorful-memoriesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF88F8982430BB2400641100 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF19A5F32435F96900CCAB45 /* IAP_ProductIDs.plist in Resources */,
+				CF88F8DD2430C49700641100 /* HeaderCell.xib in Resources */,
+				CF88F8E92430DAD100641100 /* imageCell.xib in Resources */,
+				CF88F8AA2430BB2600641100 /* LaunchScreen.storyboard in Resources */,
+				CF88F8A72430BB2600641100 /* Assets.xcassets in Resources */,
+				CF88F8E32430D95800641100 /* itemCell.xib in Resources */,
+				CF249F762434C06E00B7672F /* ActionsCell.xib in Resources */,
+				CF88F8A52430BB2400641100 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF88F8AE2430BB2700641100 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF88F8B92430BB2700641100 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1356C935D5F22E5F46AD51D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Colorful-memories-Colorful-memoriesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		14B4663F41ADF703F6A8D2D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Colorful-memories-Colorful-memoriesUITests/Pods-Colorful-memories-Colorful-memoriesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Colorful-memories-Colorful-memoriesUITests/Pods-Colorful-memories-Colorful-memoriesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Colorful-memories-Colorful-memoriesUITests/Pods-Colorful-memories-Colorful-memoriesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3185ECAB1ACE3CE9FEA17ADC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Colorful-memories/Pods-Colorful-memories-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Colorful-memories/Pods-Colorful-memories-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Colorful-memories/Pods-Colorful-memories-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EA84BD6A0E9A582CB3D6E25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Colorful-memoriesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3A3324D52B3250B364F68D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Colorful-memories-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF5DF5BB243399C100C1C6D7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nswiftformat .\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF88F8962430BB2400641100 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF88F8E42430D95800641100 /* itemCell.swift in Sources */,
+				CF88F8D22430C1E900641100 /* HedarSectionController.swift in Sources */,
+				CF88F8D52430C25600641100 /* NSObject+ListDiffable.swift in Sources */,
+				CF5DF5BA243393F000C1C6D7 /* ImagesSectionController.swift in Sources */,
+				CFF438CA243862C800AE4DB3 /* RepeatingTimer.swift in Sources */,
+				CF88F8EB2430DDDA00641100 /* ViewController.swift in Sources */,
+				CF249F752434C06E00B7672F /* ActionsCell.swift in Sources */,
+				CF88F89E2430BB2400641100 /* AppDelegate.swift in Sources */,
+				CF19A5F52435F9FF00CCAB45 /* IAPManager.swift in Sources */,
+				CF88F8E82430DAD100641100 /* imageCell.swift in Sources */,
+				CF88F8D92430C3E500641100 /* HeaderModel.swift in Sources */,
+				CF88F8A02430BB2400641100 /* SceneDelegate.swift in Sources */,
+				CF88F8DC2430C49700641100 /* HeaderCell.swift in Sources */,
+				CF5DF5B824338EC000C1C6D7 /* CircularProgressBar.swift in Sources */,
+				CFF438C8243774FA00AE4DB3 /* Networking.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF88F8AC2430BB2700641100 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF88F8B52430BB2700641100 /* Colorful_memoriesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF88F8B72430BB2700641100 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF88F8C02430BB2700641100 /* Colorful_memoriesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF88F8B22430BB2700641100 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF88F8992430BB2400641100 /* Colorful-memories */;
+			targetProxy = CF88F8B12430BB2700641100 /* PBXContainerItemProxy */;
+		};
+		CF88F8BD2430BB2700641100 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF88F8992430BB2400641100 /* Colorful-memories */;
+			targetProxy = CF88F8BC2430BB2700641100 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF88F8A32430BB2400641100 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF88F8A42430BB2400641100 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF88F8A82430BB2600641100 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF88F8A92430BB2600641100 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF88F8C22430BB2700641100 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF88F8C32430BB2700641100 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF88F8C52430BB2700641100 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97DD9CEC95A03B97D5694DF4 /* Pods-Colorful-memories.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Colorful-memories/Colorful-memories.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8M8S4HQM6M;
+				INFOPLIST_FILE = "Colorful-memories/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ferdinand.Colorful-memoriess";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF88F8C62430BB2700641100 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7F08CE1BEFA72E049F2D1E8 /* Pods-Colorful-memories.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Colorful-memories/Colorful-memories.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8M8S4HQM6M;
+				INFOPLIST_FILE = "Colorful-memories/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ferdinand.Colorful-memoriess";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CF88F8C82430BB2700641100 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95D89016AA6BE6986144F01A /* Pods-Colorful-memoriesTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LJH7752BKA;
+				INFOPLIST_FILE = "Colorful-memoriesTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ferdinand.Colorful-memoriesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Colorful-memories.app/Colorful-memories";
+			};
+			name = Debug;
+		};
+		CF88F8C92430BB2700641100 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1494E03CB2E6AA0C9ECF54AB /* Pods-Colorful-memoriesTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LJH7752BKA;
+				INFOPLIST_FILE = "Colorful-memoriesTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ferdinand.Colorful-memoriesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Colorful-memories.app/Colorful-memories";
+			};
+			name = Release;
+		};
+		CF88F8CB2430BB2700641100 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82023C3355D834065758581F /* Pods-Colorful-memories-Colorful-memoriesUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LJH7752BKA;
+				INFOPLIST_FILE = "Colorful-memoriesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ferdinand.Colorful-memoriesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Colorful-memories";
+			};
+			name = Debug;
+		};
+		CF88F8CC2430BB2700641100 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9739624986CC5207D890FEE2 /* Pods-Colorful-memories-Colorful-memoriesUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LJH7752BKA;
+				INFOPLIST_FILE = "Colorful-memoriesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ferdinand.Colorful-memoriesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Colorful-memories";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF88F8952430BB2400641100 /* Build configuration list for PBXProject "Colorful-memories" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF88F8C22430BB2700641100 /* Debug */,
+				CF88F8C32430BB2700641100 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF88F8C42430BB2700641100 /* Build configuration list for PBXNativeTarget "Colorful-memories" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF88F8C52430BB2700641100 /* Debug */,
+				CF88F8C62430BB2700641100 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF88F8C72430BB2700641100 /* Build configuration list for PBXNativeTarget "Colorful-memoriesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF88F8C82430BB2700641100 /* Debug */,
+				CF88F8C92430BB2700641100 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF88F8CA2430BB2700641100 /* Build configuration list for PBXNativeTarget "Colorful-memoriesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF88F8CB2430BB2700641100 /* Debug */,
+				CF88F8CC2430BB2700641100 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF88F8922430BB2400641100 /* Project object */;
+}

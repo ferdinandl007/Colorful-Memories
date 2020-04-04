@@ -1,0 +1,6 @@
+framework module PokerCard {
+  umbrella header "PokerCard-umbrella.h"
+
+  export *
+  module * { export * }
+}

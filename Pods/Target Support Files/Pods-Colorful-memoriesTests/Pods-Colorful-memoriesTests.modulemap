@@ -1,0 +1,6 @@
+framework module Pods_Colorful_memoriesTests {
+  umbrella header "Pods-Colorful-memoriesTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
