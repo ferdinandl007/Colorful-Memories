@@ -33,9 +33,8 @@ class HedarSectionController: ListSectionController {
         }
 
         let alertController = UIAlertController(title: "Buy now",
-                                                message: message,
+                                                message: message + ". One credit equals one processed image",
                                                 preferredStyle: alertStyle)
-
         for product in products {
             guard let price = IAPManager.shared.getPriceFormatted(for: product) else { return }
             alertController.addAction(UIAlertAction(title: "\(product.localizedTitle) for \(price)", style: .default, handler: { _ in
@@ -61,10 +60,13 @@ class HedarSectionController: ListSectionController {
     }
 
     func purchase(product: SKProduct) -> Bool {
+        guard let vc = viewController as? ViewController else { return false }
         if !IAPManager.shared.canMakePayments() {
             return false
         } else {
+            vc.willStartLongProcess()
             IAPManager.shared.buy(product: product) { result in
+                vc.didFinishLongProcess()
                 DispatchQueue.main.async {
                     switch result {
                     case .success: self.updateAppDataWithPurchasedProduct(product)
@@ -78,9 +80,11 @@ class HedarSectionController: ListSectionController {
 
     func updateAppDataWithPurchasedProduct(_ product: SKProduct) {
         let credets = UserDefaults.standard.integer(forKey: "credets")
-        if let newCredets = product.productIdentifier.parseToInt() {
+        if let newCredets = product.localizedTitle.parseToInt() {
             UserDefaults.standard.set(credets + newCredets, forKey: "credets")
         }
+        guard let vc = viewController as? ViewController else { return }
+        vc.adapter.reloadData(completion: nil)
     }
 
     func ShowError(message: String) {
@@ -122,7 +126,7 @@ extension HedarSectionController {
         } else if index == 1 {
             let cell = collectionContext!.dequeueReusableCell(withNibName: itemCell.reuseIdentifier, bundle: Bundle.main, for: self, at: index) as! itemCell
             if #available(iOS 13.0, *) {
-                cell.config(image: UIImage(systemName: "camera.on.rectangle.fill")!, label: "Camera and Library")
+                cell.config(image: UIImage(systemName: "camera.on.rectangle.fill")!, label: "Library")
             } else {
                 // Fallback on earlier versions
                 cell.config(image: #imageLiteral(resourceName: "yp_multiple"), label: "Library")
@@ -148,7 +152,7 @@ extension HedarSectionController {
             if credets > 0 {
                 var config = YPImagePickerConfiguration()
                 config.shouldSaveNewPicturesToAlbum = false
-                config.showsPhotoFilters = false
+//                config.showsPhotoFilters = false
                 config.startOnScreen = YPPickerScreen.library
                 config.screens = [.library]
                 let picker = YPImagePicker(configuration: config)

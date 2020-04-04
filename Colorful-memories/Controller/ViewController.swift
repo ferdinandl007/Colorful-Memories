@@ -13,6 +13,7 @@ import UIKit
 class ViewController: UIViewController {
     var data = [ListDiffable]()
 
+    @IBOutlet var OverlayView: UIView!
     @IBOutlet var collectionView: UICollectionView!
     lazy var adapter: ListAdapter = {
         ListAdapter(updater: ListAdapterUpdater(), viewController: self, workingRangeSize: 0)
@@ -20,7 +21,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         adapter.collectionView = collectionView
         adapter.dataSource = self
         collectionView.scrollsToTop = true
@@ -38,6 +38,7 @@ class ViewController: UIViewController {
         IAPManager.shared.getProducts { result in
             switch result {
             case let .success(products): IAPManager.shared.products = products
+                IAPManager.shared.products.sort { $0.localizedTitle.parseToInt() ?? 0 < $1.localizedTitle.parseToInt() ?? 0 }
             case let .failure(error): print(error)
             }
         }
@@ -63,6 +64,14 @@ class ViewController: UIViewController {
             ($0 as! ImageModel).image.jpegData(compressionQuality: 1.0)!
         }
         UserDefaults.standard.set(userData, forKey: "userData")
+    }
+
+    func willStartLongProcess() {
+        OverlayView.isHidden = false
+    }
+
+    func didFinishLongProcess() {
+        OverlayView.isHidden = true
     }
 }
 

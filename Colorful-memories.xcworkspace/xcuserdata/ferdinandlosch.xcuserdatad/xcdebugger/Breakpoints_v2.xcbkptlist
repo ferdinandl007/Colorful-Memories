@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "AA2FAD3B-78E8-4FDD-AB23-4976DEA7B5BE"
-            shouldBeEnabled = "Yes"
+            uuid = "63600E6C-A193-49FD-A7B3-DF9ACAD9D8AB"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Colorful-memories/SectionController/HedarSectionController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "showAlert(for:)"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "updateAppDataWithPurchasedProduct(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

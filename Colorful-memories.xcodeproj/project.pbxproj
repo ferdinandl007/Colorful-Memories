@@ -145,8 +145,6 @@
 			children = (
 				CF19A5F22435F96900CCAB45 /* IAP_ProductIDs.plist */,
 				CF19A5F42435F9FF00CCAB45 /* IAPManager.swift */,
-				CFF438C7243774FA00AE4DB3 /* Networking.swift */,
-				CFF438C9243862C800AE4DB3 /* RepeatingTimer.swift */,
 			);
 			path = "In-App Purchases";
 			sourceTree = "<group>";
@@ -184,6 +182,7 @@
 		CF88F89C2430BB2400641100 /* Colorful-memories */ = {
 			isa = PBXGroup;
 			children = (
+				CFF438CB2438881400AE4DB3 /* Networking */,
 				CF19A5F62435FE9C00CCAB45 /* In-App Purchases */,
 				CFC3DABE24323883002042A8 /* Colorful-memories.entitlements */,
 				CF88F8CD2430C12C00641100 /* Model */,
@@ -290,6 +289,15 @@
 				CF88F8E72430DAD100641100 /* imageCell.xib */,
 			);
 			path = imageCell;
+			sourceTree = "<group>";
+		};
+		CFF438CB2438881400AE4DB3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CFF438C7243774FA00AE4DB3 /* Networking.swift */,
+				CFF438C9243862C800AE4DB3 /* RepeatingTimer.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		E6C76D0F5E7DB610CE1DA743 /* Pods */ = {
@@ -757,6 +765,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Colorful-memories/Colorful-memories.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 8M8S4HQM6M;
 				INFOPLIST_FILE = "Colorful-memories/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -764,6 +773,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ferdinand.Colorful-memoriess";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
@@ -779,6 +789,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Colorful-memories/Colorful-memories.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 8M8S4HQM6M;
 				INFOPLIST_FILE = "Colorful-memories/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -786,6 +797,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ferdinand.Colorful-memoriess";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;

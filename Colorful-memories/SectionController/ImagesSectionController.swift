@@ -68,13 +68,19 @@ extension ImagesSectionController {
 
     override func sizeForItem(at index: Int) -> CGSize {
         guard let context = collectionContext else { return .zero }
-        if index == 0 {
-            let s = context.containerSize.width / model.image.size.width
-            let height = s * model.image.size.height
-            return CGSize(width: context.containerSize.width - 32, height: height)
+        print(context.containerSize.width)
+
+        var width: CGFloat {
+            return context.containerSize.width - 32
         }
 
-        return CGSize(width: context.containerSize.width - 32, height: 60)
+        if index == 0 {
+            let s = width / model.image.size.width
+            let height = s * model.image.size.height
+            return CGSize(width: width, height: height)
+        }
+
+        return CGSize(width: width, height: 50)
     }
 
     override func cellForItem(at index: Int) -> UICollectionViewCell {

@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="532" height="65"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNy-5M-SJ6">
-                                <rect key="frame" x="472" y="0.0" width="60" height="65"/>
+                                <rect key="frame" x="472" y="0.0" width="60" height="52"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="ca4-iN-5wb"/>
@@ -32,8 +32,14 @@
                                     <action selector="trash:" destination="gTV-IL-0wX" eventType="touchUpInside" id="iWf-hE-vG1"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remove" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZeZ-yU-jAN">
+                                <rect key="frame" x="483" y="45" width="38.5" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irx-V2-Csp">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="65"/>
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="0sr-YY-Drn"/>
                                 </constraints>
@@ -46,30 +52,48 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JcD-XB-gL5">
-                                <rect key="frame" x="50" y="0.0" width="50" height="65"/>
+                                <rect key="frame" x="50" y="0.0" width="50" height="52"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="EEf-ch-kwR"/>
                                 </constraints>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <state key="normal" image="photo.on.rectangle" catalog="system"/>
-                                <state key="highlighted" image="photo.fill.on.rectangle.fill" catalog="system"/>
+                                <state key="normal" image="square.and.arrow.down.on.square" catalog="system"/>
+                                <state key="highlighted" image="square.and.arrow.down.on.square.fill" catalog="system"/>
                                 <connections>
                                     <action selector="save:" destination="gTV-IL-0wX" eventType="touchUpInside" id="JtT-BW-dps"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOw-Kq-WZf">
+                                <rect key="frame" x="64" y="45" width="23.5" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8PM-qu-zoX">
+                                <rect key="frame" x="11" y="45" width="28" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="8PM-qu-zoX" firstAttribute="leading" secondItem="tyh-LH-Vcn" secondAttribute="leading" constant="11" id="1V6-lg-btK"/>
                             <constraint firstItem="JcD-XB-gL5" firstAttribute="leading" secondItem="irx-V2-Csp" secondAttribute="trailing" id="3qN-w2-3Bp"/>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="FhI-sU-phM"/>
                             <constraint firstItem="irx-V2-Csp" firstAttribute="top" secondItem="tyh-LH-Vcn" secondAttribute="top" id="KJG-4M-fHs"/>
+                            <constraint firstItem="kOw-Kq-WZf" firstAttribute="leading" secondItem="irx-V2-Csp" secondAttribute="trailing" constant="14" id="PBz-2h-7tW"/>
                             <constraint firstItem="JNy-5M-SJ6" firstAttribute="top" secondItem="tyh-LH-Vcn" secondAttribute="top" id="b3F-YX-Zkl"/>
+                            <constraint firstAttribute="bottom" secondItem="ZeZ-yU-jAN" secondAttribute="bottom" constant="8" id="bWm-rb-zeT"/>
+                            <constraint firstAttribute="bottom" secondItem="kOw-Kq-WZf" secondAttribute="bottom" constant="8" id="cGx-em-c9s"/>
                             <constraint firstItem="irx-V2-Csp" firstAttribute="leading" secondItem="tyh-LH-Vcn" secondAttribute="leading" id="ejf-ru-9MP"/>
-                            <constraint firstAttribute="bottom" secondItem="irx-V2-Csp" secondAttribute="bottom" id="fBO-dF-WdR"/>
-                            <constraint firstAttribute="bottom" secondItem="JcD-XB-gL5" secondAttribute="bottom" id="fai-nq-IET"/>
+                            <constraint firstAttribute="bottom" secondItem="irx-V2-Csp" secondAttribute="bottom" constant="13" id="fBO-dF-WdR"/>
+                            <constraint firstAttribute="bottom" secondItem="JcD-XB-gL5" secondAttribute="bottom" constant="13" id="fai-nq-IET"/>
                             <constraint firstItem="JcD-XB-gL5" firstAttribute="top" secondItem="tyh-LH-Vcn" secondAttribute="top" id="k2e-Yo-Z6d"/>
-                            <constraint firstAttribute="bottom" secondItem="JNy-5M-SJ6" secondAttribute="bottom" id="mra-xF-S6j"/>
+                            <constraint firstAttribute="bottom" secondItem="JNy-5M-SJ6" secondAttribute="bottom" constant="13" id="mra-xF-S6j"/>
+                            <constraint firstAttribute="trailing" secondItem="ZeZ-yU-jAN" secondAttribute="trailing" constant="10.5" id="r1x-NS-WYL"/>
+                            <constraint firstAttribute="bottom" secondItem="8PM-qu-zoX" secondAttribute="bottom" constant="8" id="rlp-62-Osv"/>
                             <constraint firstAttribute="trailing" secondItem="JNy-5M-SJ6" secondAttribute="trailing" id="zdu-Io-pEd"/>
                         </constraints>
                     </view>
@@ -93,8 +117,8 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="photo.fill.on.rectangle.fill" catalog="system" width="128" height="98"/>
-        <image name="photo.on.rectangle" catalog="system" width="128" height="98"/>
+        <image name="square.and.arrow.down.on.square" catalog="system" width="122" height="128"/>
+        <image name="square.and.arrow.down.on.square.fill" catalog="system" width="122" height="128"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
         <image name="trash" catalog="system" width="121" height="128"/>
