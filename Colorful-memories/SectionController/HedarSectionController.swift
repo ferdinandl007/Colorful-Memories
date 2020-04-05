@@ -174,7 +174,8 @@ extension HedarSectionController {
         } else if index == 2 {
             if credets > 0 {
                 let scannerViewController = ImageScannerController()
-                scannerViewController.imageScannerDelegate = self
+                guard let vc = viewController as? ViewController else { return }
+                scannerViewController.imageScannerDelegate = vc
                 viewController?.present(scannerViewController, animated: true)
             } else {
                 ShowError(message: "Out of credits please purchase more credits")
@@ -190,7 +191,7 @@ extension HedarSectionController {
     }
 }
 
-extension HedarSectionController: ImageScannerControllerDelegate {
+extension ViewController: ImageScannerControllerDelegate {
     func imageScannerController(_ scanner: ImageScannerController, didFailWithError error: Error) {
         // You are responsible for carefully handling the error
         scanner.dismiss(animated: true)
@@ -200,11 +201,10 @@ extension HedarSectionController: ImageScannerControllerDelegate {
     func imageScannerController(_ scanner: ImageScannerController, didFinishScanningWithResults results: ImageScannerResults) {
         // The user successfully scanned an image, which is available in the ImageScannerResults
         // You are responsible for dismissing the ImageScannerController
-        guard let vc = viewController as? ViewController else { return }
         let scanimage = results.croppedScan.image
         let image = ImageModel(image: scanimage, isColor: false)
-        vc.data.insert(image as ListDiffable, at: 1)
-        vc.adapter.performUpdates(animated: true, completion: nil)
+        data.insert(image as ListDiffable, at: 1)
+        adapter.performUpdates(animated: true, completion: nil)
         scanner.dismiss(animated: true)
     }
 

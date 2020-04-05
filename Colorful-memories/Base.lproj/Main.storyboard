@@ -34,14 +34,30 @@
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bad-3Y-hON">
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <subviews>
-                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Prx-ct-jSA">
-                                        <rect key="frame" x="188.5" y="407.5" width="37" height="37"/>
-                                    </activityIndicatorView>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Kd-uR-fxe">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="AUb-ba-kQA">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Prx-ct-jSA">
+                                                    <rect key="frame" x="188.5" y="407.5" width="37" height="37"/>
+                                                </activityIndicatorView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Prx-ct-jSA" firstAttribute="centerY" secondItem="AUb-ba-kQA" secondAttribute="centerY" id="CRO-ND-JYX"/>
+                                                <constraint firstItem="Prx-ct-jSA" firstAttribute="centerX" secondItem="AUb-ba-kQA" secondAttribute="centerX" id="VhN-QT-uhT"/>
+                                            </constraints>
+                                        </view>
+                                        <blurEffect style="regular"/>
+                                    </visualEffectView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.67000000000000004" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="Prx-ct-jSA" firstAttribute="centerX" secondItem="Bad-3Y-hON" secondAttribute="centerX" id="FxT-C5-g0R"/>
-                                    <constraint firstItem="Prx-ct-jSA" firstAttribute="centerY" secondItem="Bad-3Y-hON" secondAttribute="centerY" id="Hzr-DU-0ya"/>
+                                    <constraint firstAttribute="trailing" secondItem="0Kd-uR-fxe" secondAttribute="trailing" id="5wf-qY-rf7"/>
+                                    <constraint firstItem="0Kd-uR-fxe" firstAttribute="leading" secondItem="Bad-3Y-hON" secondAttribute="leading" id="65O-M8-Ybp"/>
+                                    <constraint firstItem="0Kd-uR-fxe" firstAttribute="top" secondItem="Bad-3Y-hON" secondAttribute="top" id="HZX-XD-he8"/>
+                                    <constraint firstAttribute="bottom" secondItem="0Kd-uR-fxe" secondAttribute="bottom" id="hFM-Cj-2vd"/>
                                 </constraints>
                             </view>
                         </subviews>
