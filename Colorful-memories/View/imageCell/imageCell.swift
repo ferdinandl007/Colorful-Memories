@@ -9,9 +9,15 @@
 import Alamofire
 import Reusable
 import UIKit
-
 class imageCell: UICollectionViewCell, NibReusable {
-    @IBOutlet var image: UIImageView!
+    @IBOutlet var image: EEZoomableImageView! {
+        didSet {
+            image.minZoomScale = 1
+            image.maxZoomScale = 3.0
+            image.resetAnimationDuration = 0.2
+        }
+    }
+
     @IBOutlet var Background: UIView!
     @IBOutlet var progress: CircularProgressBar!
 

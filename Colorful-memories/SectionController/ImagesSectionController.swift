@@ -130,6 +130,8 @@ extension ImagesSectionController {
 }
 
 extension ImagesSectionController: ActionsCellDelicate {
+    func edit() {}
+
     func save() {
         UIImageWriteToSavedPhotosAlbum(model.image, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
     }

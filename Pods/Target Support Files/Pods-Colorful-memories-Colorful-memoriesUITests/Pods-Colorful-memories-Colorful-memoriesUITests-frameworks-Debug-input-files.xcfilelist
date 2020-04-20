@@ -2,10 +2,17 @@ ${PODS_ROOT}/Target Support Files/Pods-Colorful-memories-Colorful-memoriesUITest
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/IGListDiffKit/IGListDiffKit.framework
 ${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework
+${BUILT_PRODUCTS_DIR}/NYTPhotoViewer/NYTPhotoViewer.framework
+${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework
+${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework
+${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework
+${BUILT_PRODUCTS_DIR}/PixelEditor/PixelEditor.framework
+${BUILT_PRODUCTS_DIR}/PixelEngine/PixelEngine.framework
 ${BUILT_PRODUCTS_DIR}/PokerCard/PokerCard.framework
 ${BUILT_PRODUCTS_DIR}/PryntTrimmerView/PryntTrimmerView.framework
 ${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework
 ${BUILT_PRODUCTS_DIR}/SPPermissions/SPPermissions.framework
 ${BUILT_PRODUCTS_DIR}/SteviaLayout/Stevia.framework
+${BUILT_PRODUCTS_DIR}/TransitionPatch/TransitionPatch.framework
 ${BUILT_PRODUCTS_DIR}/WeScan/WeScan.framework
 ${BUILT_PRODUCTS_DIR}/YPImagePicker/YPImagePicker.framework

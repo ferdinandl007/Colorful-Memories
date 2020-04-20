@@ -34,6 +34,7 @@
 		CF88F8EB2430DDDA00641100 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88F8EA2430DDDA00641100 /* ViewController.swift */; };
 		CFF438C8243774FA00AE4DB3 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF438C7243774FA00AE4DB3 /* Networking.swift */; };
 		CFF438CA243862C800AE4DB3 /* RepeatingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF438C9243862C800AE4DB3 /* RepeatingTimer.swift */; };
+		CFF63725244DE00C00810416 /* EEZoomableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF63724244DE00C00810416 /* EEZoomableImageView.swift */; };
 		D93859E5AD0A825064894E49 /* Pods_Colorful_memoriesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56BA8BB5EC17E10587E7453F /* Pods_Colorful_memoriesTests.framework */; };
 		E64EFABCE30B186494FF71E5 /* Pods_Colorful_memories_Colorful_memoriesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B36E57B92378AC7FBA9F2F3 /* Pods_Colorful_memories_Colorful_memoriesUITests.framework */; };
 /* End PBXBuildFile section */
@@ -98,6 +99,7 @@
 		CFC3DABE24323883002042A8 /* Colorful-memories.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Colorful-memories.entitlements"; sourceTree = "<group>"; };
 		CFF438C7243774FA00AE4DB3 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		CFF438C9243862C800AE4DB3 /* RepeatingTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingTimer.swift; sourceTree = "<group>"; };
+		CFF63724244DE00C00810416 /* EEZoomableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEZoomableImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +231,7 @@
 		CF88F8CE2430C13400641100 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CFF63724244DE00C00810416 /* EEZoomableImageView.swift */,
 				CF5DF5B624338EB300C1C6D7 /* CircularProgressBar */,
 				CF88F8E52430DA7600641100 /* imageCell */,
 				CF88F8E02430D95700641100 /* item */,
@@ -580,6 +583,7 @@
 				CF88F8D52430C25600641100 /* NSObject+ListDiffable.swift in Sources */,
 				CF5DF5BA243393F000C1C6D7 /* ImagesSectionController.swift in Sources */,
 				CFF438CA243862C800AE4DB3 /* RepeatingTimer.swift in Sources */,
+				CFF63725244DE00C00810416 /* EEZoomableImageView.swift in Sources */,
 				CF88F8EB2430DDDA00641100 /* ViewController.swift in Sources */,
 				CF249F752434C06E00B7672F /* ActionsCell.swift in Sources */,
 				CF88F89E2430BB2400641100 /* AppDelegate.swift in Sources */,

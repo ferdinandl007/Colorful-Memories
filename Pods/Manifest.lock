@@ -3,6 +3,32 @@ PODS:
   - IGListDiffKit (4.0.0)
   - IGListKit (4.0.0):
     - IGListDiffKit (= 4.0.0)
+  - NYTPhotoViewer (4.0.1):
+    - NYTPhotoViewer/AnimatedGifSupport (= 4.0.1)
+    - NYTPhotoViewer/Core (= 4.0.1)
+  - NYTPhotoViewer/AnimatedGifSupport (4.0.1):
+    - NYTPhotoViewer/Core
+    - PINRemoteImage (~> 3.0.0)
+  - NYTPhotoViewer/Core (4.0.1)
+  - PINCache (3.0.1-beta.8):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.8)
+    - PINCache/Core (= 3.0.1-beta.8)
+  - PINCache/Arc-exception-safe (3.0.1-beta.8):
+    - PINCache/Core
+  - PINCache/Core (3.0.1-beta.8):
+    - PINOperation (~> 1.1.1)
+  - PINOperation (1.1.2)
+  - PINRemoteImage (3.0.0):
+    - PINRemoteImage/PINCache (= 3.0.0)
+  - PINRemoteImage/Core (3.0.0):
+    - PINOperation
+  - PINRemoteImage/PINCache (3.0.0):
+    - PINCache (= 3.0.1-beta.8)
+    - PINRemoteImage/Core
+  - PixelEditor (0.2.1):
+    - PixelEngine (~> 0.2.0)
+    - TransitionPatch (~> 1.0.0)
+  - PixelEngine (0.2.1)
   - PokerCard (0.1.0)
   - PryntTrimmerView (4.0.0)
   - Reusable (4.1.1):
@@ -18,6 +44,7 @@ PODS:
   - SPPermissions/PhotoLibrary (5.3):
     - SPPermissions/Core
   - SteviaLayout (4.7.3)
+  - TransitionPatch (1.0.2)
   - WeScan (1.5.0)
   - YPImagePicker (4.2.0):
     - PryntTrimmerView (~> 4.0.0)
@@ -26,6 +53,9 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 5.0)
   - IGListKit (~> 4.0.0)
+  - NYTPhotoViewer
+  - PixelEditor
+  - PixelEngine
   - PokerCard
   - Reusable
   - SPPermissions
@@ -39,11 +69,18 @@ SPEC REPOS:
     - Alamofire
     - IGListDiffKit
     - IGListKit
+    - NYTPhotoViewer
+    - PINCache
+    - PINOperation
+    - PINRemoteImage
+    - PixelEditor
+    - PixelEngine
     - PokerCard
     - PryntTrimmerView
     - Reusable
     - SPPermissions
     - SteviaLayout
+    - TransitionPatch
     - WeScan
     - YPImagePicker
 
@@ -51,14 +88,21 @@ SPEC CHECKSUMS:
   Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
   IGListDiffKit: 665d6cf43ce726e676013db9c7d6c4294259b6b2
   IGListKit: fd5a5d21935298f5849fa49d426843cff97b77c7
+  NYTPhotoViewer: 2c9990696386eed9dd9e0c1d137c7c9d05d905d7
+  PINCache: 534fd41d358d828dfdf227a0d327f3673a65e20b
+  PINOperation: 24b774353ca248fcf87d67b2d61eef42087c125a
+  PINRemoteImage: e2b89e19fb6e77ffc099f9d9f3b3fe1745e3f9f9
+  PixelEditor: 2982b2c613111b809662f8f91e29f1b0204ff1b6
+  PixelEngine: d0684b3e0d3efb348d13cea320731dedaf3f4965
   PokerCard: 64aa37bfb9f7cb7f14ec3a89e1dbce62821fbd19
   PryntTrimmerView: 67e67573ffd4c073f1308effa66aefd0cfa667a0
   Reusable: 53a9acf5c536f229b31b5865782414b508252ddb
   SPPermissions: a8056ef987855e8b231481f61bd8b4cbd3fcfd80
   SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
+  TransitionPatch: c02b48b1429255b14ef82b7e411034e0958b9681
   WeScan: b2e47d07f5da3dbf3db14b742e403a8924cf32b2
   YPImagePicker: accf310f9526641a84372c0ecf943547d9b1e52c
 
-PODFILE CHECKSUM: 739b132f937a75bc9c438d2b786e1e7a6c8077d2
+PODFILE CHECKSUM: 8aa1af2de2ca5c1ac9575804de19bd6c308fef42
 
 COCOAPODS: 1.9.1

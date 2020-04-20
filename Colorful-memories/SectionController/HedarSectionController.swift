@@ -8,6 +8,7 @@
 
 import Alamofire
 import IGListKit
+import PixelEditor
 import PokerCard
 import StoreKit
 import UIKit

@@ -12,6 +12,7 @@ protocol ActionsCellDelicate: class {
     func save()
     func share()
     func trash()
+    func edit()
 }
 
 class ActionsCell: UICollectionViewCell, NibReusable {
@@ -53,6 +54,10 @@ class ActionsCell: UICollectionViewCell, NibReusable {
 
     @IBAction func save(_: Any) {
         delicate?.save()
+    }
+
+    @IBAction func edit(_: Any) {
+        delicate?.edit()
     }
 
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {

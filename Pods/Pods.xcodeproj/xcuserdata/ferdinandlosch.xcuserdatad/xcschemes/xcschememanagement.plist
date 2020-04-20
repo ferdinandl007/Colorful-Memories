@@ -19,6 +19,41 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>NYTPhotoViewer-NYTPhotoViewer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>NYTPhotoViewer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PINCache.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PINOperation.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PINRemoteImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PixelEditor.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PixelEngine.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Colorful-memories-Colorful-memoriesUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -55,6 +90,11 @@
 			<false/>
 		</dict>
 		<key>SteviaLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TransitionPatch.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

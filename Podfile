@@ -13,7 +13,10 @@ pod 'SPPermissions/Camera'
 pod 'SPPermissions'
 pod "Reusable"
 pod 'PokerCard'
+pod 'PixelEngine'
+pod 'PixelEditor'
 pod 'WeScan', '>= 0.9'
+pod 'NYTPhotoViewer'
 pod 'YPImagePicker'
 use_frameworks!
 
