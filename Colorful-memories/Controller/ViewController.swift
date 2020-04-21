@@ -13,6 +13,7 @@ import UIKit
 class ViewController: UIViewController {
     var data = [ListDiffable]()
 
+    var currentInteraction = Int()
     @IBOutlet var OverlayView: UIView!
     @IBOutlet var collectionView: UICollectionView!
     lazy var adapter: ListAdapter = {

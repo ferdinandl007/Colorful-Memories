@@ -6,6 +6,7 @@
 //  Copyright © 2020 Ferdinand Lösch. All rights reserved.
 //
 
+import Haptica
 import Reusable
 import UIKit
 protocol ActionsCellDelicate: class {
@@ -43,6 +44,10 @@ class ActionsCell: UICollectionViewCell, NibReusable {
         layer.shadowOpacity = 0.12
         layer.shadowRadius = 10
         setColourTheme()
+        for button in [editButton, saveButton, trashButton, shareButton] {
+            button?.isHaptic = true
+            button?.addHaptic(.impact(.light), forControlEvents: .touchDown)
+        }
     }
 
     @IBAction func trash(_: Any) {

@@ -35,15 +35,10 @@ class ImagesSectionController: ListSectionController {
 
     func removeCell() {
         guard let vc = viewController as? ViewController else { return }
-        for i in 0 ..< vc.data.count {
-            if let imageCell = vc.data[i] as? ImageModel {
-                if imageCell.uuid == model.uuid {
-                    vc.data.remove(at: i)
-                    break
-                }
-            }
+        vc.data.remove(at: section)
+        DispatchQueue.global().async {
+            vc.save()
         }
-        vc.save()
         vc.adapter.performUpdates(animated: true, completion: nil)
     }
 
@@ -144,6 +139,7 @@ extension ImagesSectionController: ActionsCellDelicate {
         navigationController.modalTransitionStyle = .crossDissolve
         navigationController.navigationBar.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         navigationController.overrideUserInterfaceStyle = .light
+        vc.currentInteraction = section
         vc.present(navigationController, animated: true, completion: nil)
     }
 
@@ -200,7 +196,14 @@ extension ImagesSectionController: ActionsCellDelicate {
 extension ViewController: PixelEditViewControllerDelegate {
     func pixelEditViewController(_ controller: PixelEditViewController, didEndEditing editingStack: EditingStack) {
         controller.dismiss(animated: true, completion: nil)
+        if editingStack.edits.count < 2 { return }
         let image = editingStack.makeRenderer().render(resolution: .full)
+        editingStack.initialCrop()
+        (data[currentInteraction] as? ImageModel)?.image = image
+        DispatchQueue.global().async {
+            self.save()
+        }
+        adapter.reloadObjects([data[currentInteraction]])
     }
 
     func pixelEditViewControllerDidCancelEditing(in controller: PixelEditViewController) {

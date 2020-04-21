@@ -7,6 +7,7 @@
 //
 
 import Alamofire
+import Haptica
 import IGListKit
 import PixelEditor
 import PokerCard
@@ -148,6 +149,7 @@ extension HedarSectionController {
     }
 
     override func didSelectItem(at index: Int) {
+        Haptic.impact(.light).generate()
         let credets = UserDefaults.standard.integer(forKey: "credets")
         if index == 1 {
             if credets > 0 {

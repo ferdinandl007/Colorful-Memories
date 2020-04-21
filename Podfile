@@ -6,6 +6,7 @@ target 'Colorful-memories' do
   use_frameworks!
 
   # Pods for Colorful-memories
+pod 'Haptica'
 pod 'IGListKit', '~> 4.0.0'
 pod 'Alamofire', '~> 5.0'
 pod 'SPPermissions/PhotoLibrary'

@@ -1,5 +1,6 @@
 ${PODS_ROOT}/Target Support Files/Pods-Colorful-memories/Pods-Colorful-memories-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Haptica/Haptica.framework
 ${BUILT_PRODUCTS_DIR}/IGListDiffKit/IGListDiffKit.framework
 ${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework
 ${BUILT_PRODUCTS_DIR}/NYTPhotoViewer/NYTPhotoViewer.framework

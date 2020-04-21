@@ -94,3 +94,43 @@ extension ColorCubeStorage {
         }
     }
 }
+
+extension String {
+    static func uniqueFileNameWithExtention(_ fileExtension: String) -> String {
+        let uniqueString: String = ProcessInfo.processInfo.globallyUniqueString
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd-hh-mm-sss"
+        let dateString: String = formatter.string(from: Date())
+        if fileExtension.count > 0 {
+            let fileName: String = "colourful-memories:\(dateString).\(fileExtension)"
+            return fileName
+        }
+        return uniqueString
+    }
+}
+
+extension UIImage {
+    func saveImage() -> String? {
+        let fileName = String.uniqueFileNameWithExtention("png")
+        guard let data = jpegData(compressionQuality: 1) else {
+            return nil
+        }
+        guard let directory = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) as NSURL else {
+            return nil
+        }
+        do {
+            try data.write(to: directory.appendingPathComponent(fileName)!)
+            return fileName
+        } catch {
+            print(error.localizedDescription)
+            return nil
+        }
+    }
+
+    static func getSavedImage(named: String) -> UIImage? {
+        if let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) {
+            return UIImage(contentsOfFile: URL(fileURLWithPath: dir.absoluteString).appendingPathComponent(named).path)
+        }
+        return nil
+    }
+}
