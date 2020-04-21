@@ -133,6 +133,7 @@
             <size key="customSize" width="532" height="65"/>
             <connections>
                 <outlet property="background" destination="tyh-LH-Vcn" id="G0t-af-hCL"/>
+                <outlet property="editButton" destination="29S-l9-B1M" id="IaT-7q-rfk"/>
                 <outlet property="saveButton" destination="JcD-XB-gL5" id="mR2-oJ-7Xp"/>
                 <outlet property="shareButton" destination="irx-V2-Csp" id="XIP-dK-cHP"/>
                 <outlet property="trashButton" destination="JNy-5M-SJ6" id="FDV-rt-SAZ"/>

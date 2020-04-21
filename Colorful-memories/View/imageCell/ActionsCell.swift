@@ -20,6 +20,7 @@ class ActionsCell: UICollectionViewCell, NibReusable {
     @IBOutlet var background: UIView!
     @IBOutlet var shareButton: UIButton!
     @IBOutlet var saveButton: UIButton!
+    @IBOutlet var editButton: UIButton!
 
     @IBOutlet var trashButton: UIButton!
     override func awakeFromNib() {
@@ -72,11 +73,13 @@ class ActionsCell: UICollectionViewCell, NibReusable {
             trashButton.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
             saveButton.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
             shareButton.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+            editButton.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         } else {
             background.backgroundColor = #colorLiteral(red: 0.1705144346, green: 0.1705144346, blue: 0.1705144346, alpha: 1)
             trashButton.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             saveButton.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             shareButton.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+            editButton.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         }
     }
 }

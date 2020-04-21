@@ -8,6 +8,7 @@
 
 import Foundation
 import IGListKit
+import PixelEngine
 
 // MARK: - ListDiffable
 
@@ -54,5 +55,42 @@ extension UserDefaults {
 extension String {
     func parseToInt() -> Int? {
         return Int(components(separatedBy: CharacterSet.decimalDigits.inverted).joined())
+    }
+}
+
+extension ColorCubeStorage {
+    static func loadToDefault() {
+        do {
+            try autoreleasepool {
+                let bundle = Bundle.main
+                let rootPath = bundle.bundlePath as NSString
+                let fileList = try FileManager.default.contentsOfDirectory(atPath: rootPath as String)
+
+                let filters = fileList
+                    .filter { $0.hasPrefix("LUT") && $0.hasSuffix(".png") }
+                    .sorted()
+                    .map { path -> FilterColorCube in
+                        let url = URL(fileURLWithPath: rootPath.appendingPathComponent(path))
+                        let data = try! Data(contentsOf: url)
+                        let image = UIImage(data: data)!
+                        let name = path
+                            .replacingOccurrences(of: "LUT_", with: "")
+                            .replacingOccurrences(of: ".png", with: "")
+                            .replacingOccurrences(of: ".PNG", with: "")
+                        return FilterColorCube(
+                            name: name,
+                            identifier: path,
+                            lutImage: image,
+                            dimension: 64
+                        )
+                    }
+
+                self.default.filters = filters
+                print(filters)
+            }
+
+        } catch {
+            assertionFailure("\(error)")
+        }
     }
 }

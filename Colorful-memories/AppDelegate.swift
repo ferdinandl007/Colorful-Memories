@@ -6,8 +6,8 @@
 //  Copyright © 2020 Ferdinand Lösch. All rights reserved.
 //
 
+import PixelEngine
 import UIKit
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -16,6 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UserDefaults.standard.set(3, forKey: "credets")
         }
         IAPManager.shared.startObserving()
+        DispatchQueue.global().async {
+            ColorCubeStorage.loadToDefault()
+        }
+
         return true
     }
 

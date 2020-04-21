@@ -10,6 +10,9 @@ import Alamofire
 import IGListKit
 import UIKit
 
+import PixelEditor
+import PixelEngine
+
 class ImagesSectionController: ListSectionController {
     var model: ImageModel!
 
@@ -130,7 +133,19 @@ extension ImagesSectionController {
 }
 
 extension ImagesSectionController: ActionsCellDelicate {
-    func edit() {}
+    func edit() {
+        guard let vc = viewController as? ViewController else { return }
+        let editingController = PixelEditViewController(image: model.image)
+        let navigationController = UINavigationController(rootViewController: editingController)
+        editingController.delegate = vc
+        vc.definesPresentationContext = true
+        vc.modalTransitionStyle = .crossDissolve
+        navigationController.modalPresentationStyle = .overCurrentContext
+        navigationController.modalTransitionStyle = .crossDissolve
+        navigationController.navigationBar.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        navigationController.overrideUserInterfaceStyle = .light
+        vc.present(navigationController, animated: true, completion: nil)
+    }
 
     func save() {
         UIImageWriteToSavedPhotosAlbum(model.image, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
@@ -179,5 +194,16 @@ extension ImagesSectionController: ActionsCellDelicate {
             ac.addAction(UIAlertAction(title: "OK", style: .default))
             viewController?.present(ac, animated: true)
         }
+    }
+}
+
+extension ViewController: PixelEditViewControllerDelegate {
+    func pixelEditViewController(_ controller: PixelEditViewController, didEndEditing editingStack: EditingStack) {
+        controller.dismiss(animated: true, completion: nil)
+        let image = editingStack.makeRenderer().render(resolution: .full)
+    }
+
+    func pixelEditViewControllerDidCancelEditing(in controller: PixelEditViewController) {
+        controller.dismiss(animated: true, completion: nil)
     }
 }

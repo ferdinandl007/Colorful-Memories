@@ -27,7 +27,6 @@ class ViewController: UIViewController {
         collectionView.contentInset = UIEdgeInsets(top: 10, left: 14, bottom: 50, right: 14)
 
         data.append(HeaderModel() as ListDiffable)
-
         if let userData = UserDefaults.standard.array(forKey: "userData") as? [Data] {
             data += userData.map { ImageModel(image: UIImage(data: $0, scale: 1) ?? UIImage(), isColor: true) as ListDiffable }
         }

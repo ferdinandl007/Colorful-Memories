@@ -13,6 +13,14 @@
 		CF19A5F52435F9FF00CCAB45 /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF19A5F42435F9FF00CCAB45 /* IAPManager.swift */; };
 		CF249F752434C06E00B7672F /* ActionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF249F732434C06E00B7672F /* ActionsCell.swift */; };
 		CF249F762434C06E00B7672F /* ActionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF249F742434C06E00B7672F /* ActionsCell.xib */; };
+		CF4B12F5244EA19D00E064E5 /* LUT_M01.png in Resources */ = {isa = PBXBuildFile; fileRef = CF4B12EB244EA19C00E064E5 /* LUT_M01.png */; };
+		CF4B12F8244EA19D00E064E5 /* LUT_M07.png in Resources */ = {isa = PBXBuildFile; fileRef = CF4B12EE244EA19C00E064E5 /* LUT_M07.png */; };
+		CF4B12F9244EA19D00E064E5 /* LUT_M06.png in Resources */ = {isa = PBXBuildFile; fileRef = CF4B12EF244EA19C00E064E5 /* LUT_M06.png */; };
+		CF4B12FA244EA19D00E064E5 /* LUT_M12.png in Resources */ = {isa = PBXBuildFile; fileRef = CF4B12F0244EA19C00E064E5 /* LUT_M12.png */; };
+		CF4B12FB244EA19D00E064E5 /* LUT_M11.png in Resources */ = {isa = PBXBuildFile; fileRef = CF4B12F1244EA19C00E064E5 /* LUT_M11.png */; };
+		CF4B12FC244EA19D00E064E5 /* LUT_M05.png in Resources */ = {isa = PBXBuildFile; fileRef = CF4B12F2244EA19C00E064E5 /* LUT_M05.png */; };
+		CF4B12FD244EA19D00E064E5 /* LUT_M08.png in Resources */ = {isa = PBXBuildFile; fileRef = CF4B12F3244EA19C00E064E5 /* LUT_M08.png */; };
+		CF4B12FE244EA19D00E064E5 /* LUT_M09.png in Resources */ = {isa = PBXBuildFile; fileRef = CF4B12F4244EA19C00E064E5 /* LUT_M09.png */; };
 		CF5DF5B824338EC000C1C6D7 /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5DF5B724338EC000C1C6D7 /* CircularProgressBar.swift */; };
 		CF5DF5BA243393F000C1C6D7 /* ImagesSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5DF5B9243393F000C1C6D7 /* ImagesSectionController.swift */; };
 		CF88F89E2430BB2400641100 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88F89D2430BB2400641100 /* AppDelegate.swift */; };
@@ -71,6 +79,14 @@
 		CF19A5F42435F9FF00CCAB45 /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
 		CF249F732434C06E00B7672F /* ActionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsCell.swift; sourceTree = "<group>"; };
 		CF249F742434C06E00B7672F /* ActionsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionsCell.xib; sourceTree = "<group>"; };
+		CF4B12EB244EA19C00E064E5 /* LUT_M01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M01.png; sourceTree = "<group>"; };
+		CF4B12EE244EA19C00E064E5 /* LUT_M07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M07.png; sourceTree = "<group>"; };
+		CF4B12EF244EA19C00E064E5 /* LUT_M06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M06.png; sourceTree = "<group>"; };
+		CF4B12F0244EA19C00E064E5 /* LUT_M12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M12.png; sourceTree = "<group>"; };
+		CF4B12F1244EA19C00E064E5 /* LUT_M11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M11.png; sourceTree = "<group>"; };
+		CF4B12F2244EA19C00E064E5 /* LUT_M05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M05.png; sourceTree = "<group>"; };
+		CF4B12F3244EA19C00E064E5 /* LUT_M08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M08.png; sourceTree = "<group>"; };
+		CF4B12F4244EA19C00E064E5 /* LUT_M09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M09.png; sourceTree = "<group>"; };
 		CF5DF5B724338EC000C1C6D7 /* CircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
 		CF5DF5B9243393F000C1C6D7 /* ImagesSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesSectionController.swift; sourceTree = "<group>"; };
 		CF88F89A2430BB2400641100 /* Colorful-memories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Colorful-memories.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +167,21 @@
 			path = "In-App Purchases";
 			sourceTree = "<group>";
 		};
+		CF4B12EA244EA19C00E064E5 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				CF4B12EB244EA19C00E064E5 /* LUT_M01.png */,
+				CF4B12EE244EA19C00E064E5 /* LUT_M07.png */,
+				CF4B12EF244EA19C00E064E5 /* LUT_M06.png */,
+				CF4B12F0244EA19C00E064E5 /* LUT_M12.png */,
+				CF4B12F1244EA19C00E064E5 /* LUT_M11.png */,
+				CF4B12F2244EA19C00E064E5 /* LUT_M05.png */,
+				CF4B12F3244EA19C00E064E5 /* LUT_M08.png */,
+				CF4B12F4244EA19C00E064E5 /* LUT_M09.png */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
 		CF5DF5B624338EB300C1C6D7 /* CircularProgressBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +227,7 @@
 				CF88F8A32430BB2400641100 /* Main.storyboard */,
 				CF88F8D32430C23400641100 /* Exten */,
 				CF88F8A62430BB2600641100 /* Assets.xcassets */,
+				CF4B12EA244EA19C00E064E5 /* Filters */,
 				CF88F8A82430BB2600641100 /* LaunchScreen.storyboard */,
 				CF88F8AB2430BB2600641100 /* Info.plist */,
 			);
@@ -427,10 +459,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF19A5F32435F96900CCAB45 /* IAP_ProductIDs.plist in Resources */,
+				CF4B12FB244EA19D00E064E5 /* LUT_M11.png in Resources */,
+				CF4B12F9244EA19D00E064E5 /* LUT_M06.png in Resources */,
+				CF4B12FC244EA19D00E064E5 /* LUT_M05.png in Resources */,
+				CF4B12F8244EA19D00E064E5 /* LUT_M07.png in Resources */,
 				CF88F8DD2430C49700641100 /* HeaderCell.xib in Resources */,
+				CF4B12FD244EA19D00E064E5 /* LUT_M08.png in Resources */,
+				CF4B12FE244EA19D00E064E5 /* LUT_M09.png in Resources */,
 				CF88F8E92430DAD100641100 /* imageCell.xib in Resources */,
+				CF4B12FA244EA19D00E064E5 /* LUT_M12.png in Resources */,
 				CF88F8AA2430BB2600641100 /* LaunchScreen.storyboard in Resources */,
 				CF88F8A72430BB2600641100 /* Assets.xcassets in Resources */,
+				CF4B12F5244EA19D00E064E5 /* LUT_M01.png in Resources */,
 				CF88F8E32430D95800641100 /* itemCell.xib in Resources */,
 				CF249F762434C06E00B7672F /* ActionsCell.xib in Resources */,
 				CF88F8A52430BB2400641100 /* Main.storyboard in Resources */,
