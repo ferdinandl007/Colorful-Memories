@@ -35,7 +35,11 @@ class ImagesSectionController: ListSectionController {
 
     func removeCell() {
         guard let vc = viewController as? ViewController else { return }
-        vc.data.remove(at: section)
+        if vc.data.count < section {
+            vc.data.remove(at: 1)
+        } else {
+            vc.data.remove(at: section)
+        }
         DispatchQueue.global().async {
             vc.save()
         }
@@ -106,15 +110,19 @@ extension ImagesSectionController {
                 self.cell.setProgress(result.progress)
                 if let error = result.error {
                     self.ShowError(message: error)
+                    return
                 }
                 if let newImage = result.image {
                     self.cell.setImage(image: newImage)
                     self.model.image = newImage
                     self.model.isColor = true
                     guard let vc = self.viewController as? ViewController else { return }
-                    vc.save()
+                    DispatchQueue.global().async {
+                        vc.save()
+                    }
                     let credets = UserDefaults.standard.integer(forKey: "credets") - 1
                     UserDefaults.standard.set(credets, forKey: "credets")
+                    AppStoreReviewManager.requestReviewIfAppropriate()
                 }
             }
         }

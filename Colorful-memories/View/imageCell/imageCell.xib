@@ -25,19 +25,18 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y2l-vb-SDb" customClass="CircularProgressBar" customModule="Colorful_memories" customModuleProvider="target">
-                                <rect key="frame" x="97" y="47.5" width="344" height="344"/>
+                                <rect key="frame" x="169" y="119.5" width="200" height="200"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Y2l-vb-SDb" secondAttribute="height" multiplier="1:1" id="1DF-30-tNl"/>
+                                    <constraint firstAttribute="width" constant="200" id="7g3-Uo-pNZ"/>
+                                    <constraint firstAttribute="height" constant="200" id="awL-6A-CnW"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Y2l-vb-SDb" firstAttribute="top" secondItem="ps7-Qu-9se" secondAttribute="top" constant="47.5" id="RJ8-uz-Gr3"/>
                             <constraint firstItem="Y2l-vb-SDb" firstAttribute="centerY" secondItem="ps7-Qu-9se" secondAttribute="centerY" id="Snu-PB-3TF"/>
                             <constraint firstItem="Y2l-vb-SDb" firstAttribute="centerX" secondItem="ps7-Qu-9se" secondAttribute="centerX" id="aId-MK-49c"/>
-                            <constraint firstAttribute="bottom" secondItem="Y2l-vb-SDb" secondAttribute="bottom" constant="47.5" id="xuJ-y9-ZCS"/>
                         </constraints>
                     </view>
                 </subviews>

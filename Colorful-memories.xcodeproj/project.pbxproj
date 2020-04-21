@@ -40,6 +40,7 @@
 		CF88F8E82430DAD100641100 /* imageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88F8E62430DAD100641100 /* imageCell.swift */; };
 		CF88F8E92430DAD100641100 /* imageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF88F8E72430DAD100641100 /* imageCell.xib */; };
 		CF88F8EB2430DDDA00641100 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF88F8EA2430DDDA00641100 /* ViewController.swift */; };
+		CF9C9B22244EDB0C0017A1B1 /* StoreReviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9C9B21244EDB0C0017A1B1 /* StoreReviewHelper.swift */; };
 		CFF438C8243774FA00AE4DB3 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF438C7243774FA00AE4DB3 /* Networking.swift */; };
 		CFF438CA243862C800AE4DB3 /* RepeatingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF438C9243862C800AE4DB3 /* RepeatingTimer.swift */; };
 		CFF63725244DE00C00810416 /* EEZoomableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF63724244DE00C00810416 /* EEZoomableImageView.swift */; };
@@ -112,6 +113,8 @@
 		CF88F8E62430DAD100641100 /* imageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageCell.swift; sourceTree = "<group>"; };
 		CF88F8E72430DAD100641100 /* imageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = imageCell.xib; sourceTree = "<group>"; };
 		CF88F8EA2430DDDA00641100 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF9C9B21244EDB0C0017A1B1 /* StoreReviewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreReviewHelper.swift; sourceTree = "<group>"; };
+		CF9C9B23244EE05B0017A1B1 /* Colorful-memoriesRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Colorful-memoriesRelease.entitlements"; sourceTree = "<group>"; };
 		CFC3DABE24323883002042A8 /* Colorful-memories.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Colorful-memories.entitlements"; sourceTree = "<group>"; };
 		CFF438C7243774FA00AE4DB3 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		CFF438C9243862C800AE4DB3 /* RepeatingTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingTimer.swift; sourceTree = "<group>"; };
@@ -163,6 +166,7 @@
 			children = (
 				CF19A5F22435F96900CCAB45 /* IAP_ProductIDs.plist */,
 				CF19A5F42435F9FF00CCAB45 /* IAPManager.swift */,
+				CF9C9B21244EDB0C0017A1B1 /* StoreReviewHelper.swift */,
 			);
 			path = "In-App Purchases";
 			sourceTree = "<group>";
@@ -215,6 +219,7 @@
 		CF88F89C2430BB2400641100 /* Colorful-memories */ = {
 			isa = PBXGroup;
 			children = (
+				CF9C9B23244EE05B0017A1B1 /* Colorful-memoriesRelease.entitlements */,
 				CFF438CB2438881400AE4DB3 /* Networking */,
 				CF19A5F62435FE9C00CCAB45 /* In-App Purchases */,
 				CFC3DABE24323883002042A8 /* Colorful-memories.entitlements */,
@@ -630,6 +635,7 @@
 				CF19A5F52435F9FF00CCAB45 /* IAPManager.swift in Sources */,
 				CF88F8E82430DAD100641100 /* imageCell.swift in Sources */,
 				CF88F8D92430C3E500641100 /* HeaderModel.swift in Sources */,
+				CF9C9B22244EDB0C0017A1B1 /* StoreReviewHelper.swift in Sources */,
 				CF88F8A02430BB2400641100 /* SceneDelegate.swift in Sources */,
 				CF88F8DC2430C49700641100 /* HeaderCell.swift in Sources */,
 				CF5DF5B824338EC000C1C6D7 /* CircularProgressBar.swift in Sources */,
@@ -809,7 +815,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Colorful-memories/Colorful-memories.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 8M8S4HQM6M;
 				INFOPLIST_FILE = "Colorful-memories/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -817,7 +823,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ferdinand.Colorful-memoriess";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
@@ -831,9 +837,9 @@
 			baseConfigurationReference = B7F08CE1BEFA72E049F2D1E8 /* Pods-Colorful-memories.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Colorful-memories/Colorful-memories.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Colorful-memories/Colorful-memoriesRelease.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 8M8S4HQM6M;
 				INFOPLIST_FILE = "Colorful-memories/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -841,7 +847,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ferdinand.Colorful-memoriess";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
