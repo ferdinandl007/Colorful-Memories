@@ -46,12 +46,23 @@ class ViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        let cameraState = SPPermission.camera.isAuthorized
-        let photoLibrary = SPPermission.photoLibrary.isAuthorized
-        if !cameraState || !photoLibrary {
-            let controller = SPPermissions.dialog([.camera, .photoLibrary])
-            controller.present(on: self)
-        }
+        requestPermissions()
+    }
+
+    func requestPermissions() {
+        if UserDefaults.standard.bool(forKey: "Permissions") { return }
+        let permissions: [SPPermission] = [.notification, .camera, .photoLibrary]
+        let controller = SPPermissions.dialog(permissions)
+        controller.present(on: self)
+        UserDefaults.standard.set(true, forKey: "Permissions")
+    }
+
+    func askForPermissions(permission: SPPermission) -> Bool {
+        let permissions: [SPPermission] = [.camera, .photoLibrary].filter { !$0.isAuthorized && $0 == permission }
+        if permissions.isEmpty { return false }
+        let controller = SPPermissions.dialog(permissions)
+        controller.present(on: self)
+        return true
     }
 
     override func viewWillLayoutSubviews() {

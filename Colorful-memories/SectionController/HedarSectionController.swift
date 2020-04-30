@@ -10,7 +10,6 @@ import Alamofire
 import Haptica
 import IGListKit
 import PixelEditor
-import PokerCard
 import StoreKit
 import UIKit
 import WeScan
@@ -40,6 +39,7 @@ class HedarSectionController: ListSectionController {
         for product in products {
             guard let price = IAPManager.shared.getPriceFormatted(for: product) else { return }
             alertController.addAction(UIAlertAction(title: "\(product.localizedTitle) for \(price)", style: .default, handler: { _ in
+                Logging.inAppPurchaseMade(purchase: product.localizedTitle)
                 if !self.purchase(product: product) {
                     self.showSingleAlert(withMessage: "In-App Purchases are not allowed in this device.")
                 }
@@ -72,7 +72,7 @@ class HedarSectionController: ListSectionController {
                 DispatchQueue.main.async {
                     switch result {
                     case .success: self.updateAppDataWithPurchasedProduct(product)
-                    case let .failure(error): self.ShowError(message: error.localizedDescription)
+                    case let .failure(error): self.ShowError(message: error.localizedDescription); Logging.inAppPurchaseCancelled()
                     }
                 }
             }
@@ -155,9 +155,9 @@ extension HedarSectionController {
             if credets > 0 {
                 var config = YPImagePickerConfiguration()
                 config.shouldSaveNewPicturesToAlbum = false
-//                config.showsPhotoFilters = false
                 config.startOnScreen = YPPickerScreen.library
                 config.screens = [.library]
+                guard let vc = viewController as? ViewController else { return }
                 let picker = YPImagePicker(configuration: config)
                 picker.didFinishPicking { [unowned picker] items, _ in
                     if let photo = items.singlePhoto {
@@ -166,12 +166,16 @@ extension HedarSectionController {
                         vc.data.insert(image as ListDiffable, at: 1)
                         vc.adapter.performUpdates(animated: true, completion: nil)
                         print(vc.data)
+                        Logging.library()
                     }
                     picker.dismiss(animated: true, completion: nil)
                 }
-                viewController?.present(picker, animated: true, completion: nil)
+                if !vc.askForPermissions(permission: .photoLibrary) {
+                    vc.present(picker, animated: true, completion: nil)
+                }
             } else {
                 ShowError(message: "Out of credits please purchase more credits")
+                Logging.usesOutOfCredit()
             }
 
         } else if index == 2 {
@@ -179,9 +183,13 @@ extension HedarSectionController {
                 let scannerViewController = ImageScannerController()
                 guard let vc = viewController as? ViewController else { return }
                 scannerViewController.imageScannerDelegate = vc
-                viewController?.present(scannerViewController, animated: true)
+                if !vc.askForPermissions(permission: .camera) {
+                    viewController?.present(scannerViewController, animated: true)
+                    Logging.scanPhoto()
+                }
             } else {
                 ShowError(message: "Out of credits please purchase more credits")
+                Logging.usesOutOfCredit()
             }
         } else {
             print("buy more!")

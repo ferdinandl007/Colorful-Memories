@@ -6,11 +6,12 @@
 //  Copyright © 2020 Ferdinand Lösch. All rights reserved.
 //
 
+import Firebase
 import PixelEngine
 import UIKit
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-    func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         if UserDefaults.standard.object(forKey: "credets") == nil {
             UserDefaults.standard.set(3, forKey: "credets")
@@ -19,7 +20,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         DispatchQueue.global().async {
             ColorCubeStorage.loadToDefault()
         }
+        FirebaseApp.configure()
 
+        #if DEBUG
+            UserDefaults.standard.set(50, forKey: "credets")
+            print("App for debug")
+        #else
+            print("App Store build")
+        #endif
+        notifications(with: application)
+        RemoteConfigManager.instance.fetchCloudValues()
         return true
     }
 
@@ -39,5 +49,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_: UIApplication) {
         IAPManager.shared.stopObserving()
+    }
+
+    func notifications(with application: UIApplication) {
+        if #available(iOS 10.0, *) {
+            // For iOS 10 display notification (sent via APNS)
+            UNUserNotificationCenter.current().delegate = self
+
+            let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+            UNUserNotificationCenter.current().requestAuthorization(
+                options: authOptions,
+                completionHandler: { _, _ in }
+            )
+        } else {
+            let settings: UIUserNotificationSettings =
+                UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+            application.registerUserNotificationSettings(settings)
+        }
+
+        application.registerForRemoteNotifications()
     }
 }

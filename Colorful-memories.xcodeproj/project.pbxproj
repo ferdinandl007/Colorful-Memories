@@ -13,6 +13,7 @@
 		CF19A5F52435F9FF00CCAB45 /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF19A5F42435F9FF00CCAB45 /* IAPManager.swift */; };
 		CF249F752434C06E00B7672F /* ActionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF249F732434C06E00B7672F /* ActionsCell.swift */; };
 		CF249F762434C06E00B7672F /* ActionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF249F742434C06E00B7672F /* ActionsCell.xib */; };
+		CF2613F4245B34EB0076ABB9 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2613F3245B34EB0076ABB9 /* Logging.swift */; };
 		CF4B12F5244EA19D00E064E5 /* LUT_M01.png in Resources */ = {isa = PBXBuildFile; fileRef = CF4B12EB244EA19C00E064E5 /* LUT_M01.png */; };
 		CF4B12F8244EA19D00E064E5 /* LUT_M07.png in Resources */ = {isa = PBXBuildFile; fileRef = CF4B12EE244EA19C00E064E5 /* LUT_M07.png */; };
 		CF4B12F9244EA19D00E064E5 /* LUT_M06.png in Resources */ = {isa = PBXBuildFile; fileRef = CF4B12EF244EA19C00E064E5 /* LUT_M06.png */; };
@@ -43,6 +44,8 @@
 		CF9C9B22244EDB0C0017A1B1 /* StoreReviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9C9B21244EDB0C0017A1B1 /* StoreReviewHelper.swift */; };
 		CFF438C8243774FA00AE4DB3 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF438C7243774FA00AE4DB3 /* Networking.swift */; };
 		CFF438CA243862C800AE4DB3 /* RepeatingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF438C9243862C800AE4DB3 /* RepeatingTimer.swift */; };
+		CFF573C6245B087C00C4B52C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFF573C5245B087C00C4B52C /* GoogleService-Info.plist */; };
+		CFF573CA245B246300C4B52C /* RemoteConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF573C9245B246300C4B52C /* RemoteConfigManager.swift */; };
 		CFF63725244DE00C00810416 /* EEZoomableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF63724244DE00C00810416 /* EEZoomableImageView.swift */; };
 		D93859E5AD0A825064894E49 /* Pods_Colorful_memoriesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56BA8BB5EC17E10587E7453F /* Pods_Colorful_memoriesTests.framework */; };
 		E64EFABCE30B186494FF71E5 /* Pods_Colorful_memories_Colorful_memoriesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B36E57B92378AC7FBA9F2F3 /* Pods_Colorful_memories_Colorful_memoriesUITests.framework */; };
@@ -80,6 +83,7 @@
 		CF19A5F42435F9FF00CCAB45 /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
 		CF249F732434C06E00B7672F /* ActionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsCell.swift; sourceTree = "<group>"; };
 		CF249F742434C06E00B7672F /* ActionsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionsCell.xib; sourceTree = "<group>"; };
+		CF2613F3245B34EB0076ABB9 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
 		CF4B12EB244EA19C00E064E5 /* LUT_M01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M01.png; sourceTree = "<group>"; };
 		CF4B12EE244EA19C00E064E5 /* LUT_M07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M07.png; sourceTree = "<group>"; };
 		CF4B12EF244EA19C00E064E5 /* LUT_M06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LUT_M06.png; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 		CFC3DABE24323883002042A8 /* Colorful-memories.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Colorful-memories.entitlements"; sourceTree = "<group>"; };
 		CFF438C7243774FA00AE4DB3 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		CFF438C9243862C800AE4DB3 /* RepeatingTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingTimer.swift; sourceTree = "<group>"; };
+		CFF573C5245B087C00C4B52C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CFF573C9245B246300C4B52C /* RemoteConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigManager.swift; sourceTree = "<group>"; };
 		CFF63724244DE00C00810416 /* EEZoomableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEZoomableImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -219,10 +225,11 @@
 		CF88F89C2430BB2400641100 /* Colorful-memories */ = {
 			isa = PBXGroup;
 			children = (
+				CFC3DABE24323883002042A8 /* Colorful-memories.entitlements */,
 				CF9C9B23244EE05B0017A1B1 /* Colorful-memoriesRelease.entitlements */,
 				CFF438CB2438881400AE4DB3 /* Networking */,
 				CF19A5F62435FE9C00CCAB45 /* In-App Purchases */,
-				CFC3DABE24323883002042A8 /* Colorful-memories.entitlements */,
+				CFF573CB245B247B00C4B52C /* Firebase */,
 				CF88F8CD2430C12C00641100 /* Model */,
 				CF88F8CE2430C13400641100 /* View */,
 				CF88F8D02430C15400641100 /* SectionController */,
@@ -234,6 +241,7 @@
 				CF88F8A62430BB2600641100 /* Assets.xcassets */,
 				CF4B12EA244EA19C00E064E5 /* Filters */,
 				CF88F8A82430BB2600641100 /* LaunchScreen.storyboard */,
+				CFF573C5245B087C00C4B52C /* GoogleService-Info.plist */,
 				CF88F8AB2430BB2600641100 /* Info.plist */,
 			);
 			path = "Colorful-memories";
@@ -340,6 +348,15 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		CFF573CB245B247B00C4B52C /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				CFF573C9245B246300C4B52C /* RemoteConfigManager.swift */,
+				CF2613F3245B34EB0076ABB9 /* Logging.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
 		E6C76D0F5E7DB610CE1DA743 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -366,6 +383,8 @@
 				CF88F8982430BB2400641100 /* Resources */,
 				3185ECAB1ACE3CE9FEA17ADC /* [CP] Embed Pods Frameworks */,
 				CF5DF5BB243399C100C1C6D7 /* ShellScript */,
+				42B41F10432CB85EDEE8F6A0 /* [CP] Copy Pods Resources */,
+				CF2613F2245B34400076ABB9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -404,6 +423,7 @@
 				CF88F8B82430BB2700641100 /* Frameworks */,
 				CF88F8B92430BB2700641100 /* Resources */,
 				14B4663F41ADF703F6A8D2D3 /* [CP] Embed Pods Frameworks */,
+				CBE6AC3B9F89B32453547A88 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -472,6 +492,7 @@
 				CF4B12FD244EA19D00E064E5 /* LUT_M08.png in Resources */,
 				CF4B12FE244EA19D00E064E5 /* LUT_M09.png in Resources */,
 				CF88F8E92430DAD100641100 /* imageCell.xib in Resources */,
+				CFF573C6245B087C00C4B52C /* GoogleService-Info.plist in Resources */,
 				CF4B12FA244EA19D00E064E5 /* LUT_M12.png in Resources */,
 				CF88F8AA2430BB2600641100 /* LaunchScreen.storyboard in Resources */,
 				CF88F8A72430BB2600641100 /* Assets.xcassets in Resources */,
@@ -555,6 +576,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Colorful-memories/Pods-Colorful-memories-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		42B41F10432CB85EDEE8F6A0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Colorful-memories/Pods-Colorful-memories-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Colorful-memories/Pods-Colorful-memories-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Colorful-memories/Pods-Colorful-memories-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9EA84BD6A0E9A582CB3D6E25 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -599,6 +637,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CBE6AC3B9F89B32453547A88 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Colorful-memories-Colorful-memoriesUITests/Pods-Colorful-memories-Colorful-memoriesUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Colorful-memories-Colorful-memoriesUITests/Pods-Colorful-memories-Colorful-memoriesUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Colorful-memories-Colorful-memoriesUITests/Pods-Colorful-memories-Colorful-memoriesUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF2613F2245B34400076ABB9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
 		CF5DF5BB243399C100C1C6D7 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -625,9 +697,11 @@
 			files = (
 				CF88F8E42430D95800641100 /* itemCell.swift in Sources */,
 				CF88F8D22430C1E900641100 /* HedarSectionController.swift in Sources */,
+				CF2613F4245B34EB0076ABB9 /* Logging.swift in Sources */,
 				CF88F8D52430C25600641100 /* NSObject+ListDiffable.swift in Sources */,
 				CF5DF5BA243393F000C1C6D7 /* ImagesSectionController.swift in Sources */,
 				CFF438CA243862C800AE4DB3 /* RepeatingTimer.swift in Sources */,
+				CFF573CA245B246300C4B52C /* RemoteConfigManager.swift in Sources */,
 				CFF63725244DE00C00810416 /* EEZoomableImageView.swift in Sources */,
 				CF88F8EB2430DDDA00641100 /* ViewController.swift in Sources */,
 				CF249F752434C06E00B7672F /* ActionsCell.swift in Sources */,
@@ -815,7 +889,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Colorful-memories/Colorful-memories.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = 8M8S4HQM6M;
 				INFOPLIST_FILE = "Colorful-memories/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -823,7 +897,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 2.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ferdinand.Colorful-memoriess";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
@@ -839,7 +913,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Colorful-memories/Colorful-memoriesRelease.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = 8M8S4HQM6M;
 				INFOPLIST_FILE = "Colorful-memories/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -847,7 +921,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 2.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ferdinand.Colorful-memoriess";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;

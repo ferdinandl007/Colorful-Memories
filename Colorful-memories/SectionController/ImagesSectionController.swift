@@ -51,7 +51,7 @@ class ImagesSectionController: ListSectionController {
         if UIDevice.current.userInterfaceIdiom == .pad {
             alertStyle = UIAlertController.Style.alert
         }
-
+        Logging.processingError(error: message)
         let alertController = UIAlertController(title: "Error", message: message, preferredStyle: alertStyle)
 
         let action = UIAlertAction(title: "Ok", style: .default) { _ in
@@ -70,7 +70,6 @@ extension ImagesSectionController {
 
     override func sizeForItem(at index: Int) -> CGSize {
         guard let context = collectionContext else { return .zero }
-        print(context.containerSize.width)
 
         var width: CGFloat {
             return context.containerSize.width - 32
@@ -105,6 +104,7 @@ extension ImagesSectionController {
     }
 
     func sendImageToAI() {
+        Logging.imageProcessed()
         Networking.shared.prossessImage(image: model.image) { result in
             DispatchQueue.main.async {
                 self.cell.setProgress(result.progress)
@@ -121,6 +121,7 @@ extension ImagesSectionController {
                         vc.save()
                     }
                     let credets = UserDefaults.standard.integer(forKey: "credets") - 1
+                    Logging.logCredit(credit: credets)
                     UserDefaults.standard.set(credets, forKey: "credets")
                     AppStoreReviewManager.requestReviewIfAppropriate()
                 }

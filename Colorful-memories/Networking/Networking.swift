@@ -7,8 +7,8 @@
 //
 
 import Alamofire
+import Firebase
 import Foundation
-
 class Networking {
     static let shared = Networking()
     var isInProcessinQueue = Set<UIImage>()
@@ -37,8 +37,8 @@ class Networking {
                 }
             }
             var isProssesing = false
-
-            let progressUpdater = RepeatingTimer(timeInterval: 0.6)
+            let time = RemoteConfigManager.instance.getProcessingTime()
+            let progressUpdater = RepeatingTimer(timeInterval: time)
             progressUpdater.eventHandler = {
                 if isProssesing {
                     completed += 0.01
@@ -54,8 +54,8 @@ class Networking {
                 "render_factor": 32,
                 "encoded_img": base64Image,
             ]
-
-            AF.request("https://colourize.cf/images/predict", method: .post, parameters: parameters, encoding: JSONEncoding.default)
+            let url = RemoteConfigManager.instance.getColourizeAPI()
+            AF.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default)
                 .uploadProgress { p in
                     let upload = p.fractionCompleted
                     if upload == 1 || isProssesing {

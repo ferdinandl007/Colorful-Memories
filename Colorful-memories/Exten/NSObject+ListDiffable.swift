@@ -86,7 +86,6 @@ extension ColorCubeStorage {
                     }
 
                 self.default.filters = filters
-                print(filters)
             }
 
         } catch {
