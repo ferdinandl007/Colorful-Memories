@@ -30,7 +30,7 @@ class RemoteConfigManager {
     private func loadDefaultValues() {
         let appDefaults: [String: Any?] = [
             keys.colourAPI.rawValue: "https://colourize.cf/images/predict",
-            keys.prossTime.rawValue: "0.1",
+            keys.prossTime.rawValue: "0.6",
         ]
         remoteConfig.setDefaults(appDefaults as? [String: NSObject])
     }
@@ -55,7 +55,6 @@ class RemoteConfigManager {
     }
 
     func getColourizeAPI() -> String {
-        print(remoteConfig[keys.colourAPI.rawValue].stringValue ?? "dddd")
         return remoteConfig[keys.colourAPI.rawValue].stringValue ?? "https://colourize.cf/images/predict"
     }
 

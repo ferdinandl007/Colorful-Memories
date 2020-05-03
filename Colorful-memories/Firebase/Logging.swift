@@ -11,7 +11,7 @@ import Foundation
 
 class Logging {
     static func imageProcessed() {
-        Analytics.logEvent("Image processed", parameters: nil)
+        Analytics.logEvent("Image_processed", parameters: nil)
     }
 
     static func inAppPurchaseMade(purchase: String) {
@@ -19,7 +19,7 @@ class Logging {
     }
 
     static func inAppPurchaseCancelled() {
-        Analytics.logEvent("Purchase cancelled", parameters: nil)
+        Analytics.logEvent("Purchase_cancelled", parameters: nil)
     }
 
     static func processingError(error: String) {
@@ -40,5 +40,17 @@ class Logging {
 
     static func library() {
         Analytics.logEvent("Library", parameters: nil)
+    }
+    
+    static func usedImageEditor() {
+        Analytics.logEvent("usedImageEditor", parameters: nil)
+    }
+    
+    static func savedImage() {
+        Analytics.logEvent("saved_image", parameters: nil)
+    }
+    
+    static func sharedImage() {
+         Analytics.logEvent("sharedImage", parameters: nil)
     }
 }
