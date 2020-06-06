@@ -104,7 +104,7 @@ import UIKit
             fatalError("init(coder:) has not been implemented")
         }
 
-        public override func prepareForReuse() {
+        override public func prepareForReuse() {
             super.prepareForReuse()
             permissionTitleLabel.text = nil
             permissionDescriptionLabel.text = nil

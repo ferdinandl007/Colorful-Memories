@@ -9,14 +9,14 @@
 import UIKit
 
 public class YPSelectionsGalleryVC: UIViewController, YPSelectionsGalleryCellDelegate {
-    public override var prefersStatusBarHidden: Bool { return YPConfig.hidesStatusBar }
+    override public var prefersStatusBarHidden: Bool { return YPConfig.hidesStatusBar }
 
     public var items: [YPMediaItem] = []
     public var didFinishHandler: ((_ gallery: YPSelectionsGalleryVC, _ items: [YPMediaItem]) -> Void)?
     private var lastContentOffsetX: CGFloat = 0
 
     var v = YPSelectionsGalleryView()
-    public override func loadView() { view = v }
+    override public func loadView() { view = v }
 
     public required init(items: [YPMediaItem],
                          didFinishHandler:
@@ -30,7 +30,7 @@ public class YPSelectionsGalleryVC: UIViewController, YPSelectionsGalleryCellDel
         fatalError("init(coder:) has not been implemented")
     }
 
-    public override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
 
         // Register collection view cell

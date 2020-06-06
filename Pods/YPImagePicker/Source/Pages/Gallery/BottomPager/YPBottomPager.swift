@@ -26,7 +26,7 @@ open class YPBottomPager: UIViewController, UIScrollViewDelegate {
         return controllers[currentPage]
     }
 
-    open override func loadView() {
+    override open func loadView() {
         automaticallyAdjustsScrollViewInsets = false
         v.scrollView.delegate = self
         view = v

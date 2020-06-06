@@ -49,7 +49,7 @@ import UIKit
         /**
          Using draw with code. No images.
          */
-        public override func draw(_ rect: CGRect) {
+        override public func draw(_ rect: CGRect) {
             super.draw(rect)
             switch permission {
             case .camera:

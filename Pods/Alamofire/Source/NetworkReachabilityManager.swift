@@ -36,11 +36,11 @@
     open class NetworkReachabilityManager {
         /// Defines the various states of network reachability.
         public enum NetworkReachabilityStatus {
-        /// It is unknown whether the network is reachable.
+            /// It is unknown whether the network is reachable.
             case unknown
-        /// The network is not reachable.
+            /// The network is not reachable.
             case notReachable
-        /// The network is reachable on the associated `ConnectionType`.
+            /// The network is reachable on the associated `ConnectionType`.
             case reachable(ConnectionType)
 
             init(_ flags: SCNetworkReachabilityFlags) {
@@ -55,9 +55,9 @@
 
             /// Defines the various connection types detected by reachability flags.
             public enum ConnectionType {
-            /// The connection type is either over Ethernet or WiFi.
+                /// The connection type is either over Ethernet or WiFi.
                 case ethernetOrWiFi
-            /// The connection type is a cellular connection.
+                /// The connection type is a cellular connection.
                 case cellular
             }
         }

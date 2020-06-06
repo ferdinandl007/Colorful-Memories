@@ -90,11 +90,11 @@ import UIKit
         /**
          Ovveride for always uppercased title.
          */
-        public override func setTitle(_ title: String?, for state: UIControl.State) {
+        override public func setTitle(_ title: String?, for state: UIControl.State) {
             super.setTitle(title?.uppercased(), for: state)
         }
 
-        public override func layoutSubviews() {
+        override public func layoutSubviews() {
             super.layoutSubviews()
             layer.cornerRadius = frame.height / 2
         }

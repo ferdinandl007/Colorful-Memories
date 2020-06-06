@@ -15,7 +15,7 @@ public protocol YPImagePickerDelegate: AnyObject {
 }
 
 open class YPImagePicker: UINavigationController {
-    open override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+    override open var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .portrait
     }
 
@@ -26,7 +26,7 @@ open class YPImagePicker: UINavigationController {
 
     public weak var imagePickerDelegate: YPImagePickerDelegate?
 
-    open override var preferredStatusBarStyle: UIStatusBarStyle {
+    override open var preferredStatusBarStyle: UIStatusBarStyle {
         return YPImagePickerConfiguration.shared.preferredStatusBarStyle
     }
 
@@ -59,7 +59,7 @@ open class YPImagePicker: UINavigationController {
         fatalError("init(coder:) has not been implemented")
     }
 
-    open override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         picker.didClose = { [weak self] in
             self?._didFinishPicking?([], true)

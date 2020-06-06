@@ -15,6 +15,7 @@ pod 'SPPermissions/Camera'
 pod 'SPPermissions'
 pod "Reusable"
 pod 'Firebase'
+pod 'Firebase/Performance'
 pod 'Firebase/Crashlytics'
 pod 'Firebase/Core'
 pod 'Firebase/RemoteConfig'
@@ -24,7 +25,6 @@ pod 'Firebase/Messaging'
 pod 'PixelEngine'
 pod 'PixelEditor'
 pod 'WeScan', '>= 0.9'
-pod 'NYTPhotoViewer'
 pod 'YPImagePicker'
 use_frameworks!
 

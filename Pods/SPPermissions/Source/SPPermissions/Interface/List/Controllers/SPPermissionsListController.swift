@@ -72,7 +72,7 @@ import UIKit
             fatalError("init(coder:) has not been implemented")
         }
 
-        public override func viewDidLoad() {
+        override public func viewDidLoad() {
             super.viewDidLoad()
 
             if #available(iOS 13.0, *) {
@@ -183,7 +183,7 @@ import UIKit
             dismiss(animated: true, completion: nil)
         }
 
-        public override func dismiss(animated flag: Bool, completion: (() -> Void)? = nil) {
+        override public func dismiss(animated flag: Bool, completion: (() -> Void)? = nil) {
             super.dismiss(animated: flag, completion: {
                 completion?()
                 let ids: [Int] = self.permissions.map { $0.rawValue }
@@ -210,11 +210,11 @@ import UIKit
     // MARK: Table Data Source & Delegate
 
     extension SPPermissionsListController {
-        public override func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
+        override public func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
             return permissions.count
         }
 
-        public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        override public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             var cell = tableView.dequeueReusableCell(withIdentifier: SPPermissionTableViewCell.id, for: indexPath) as! SPPermissionTableViewCell
             let permission = permissions[indexPath.row]
             cell.defaultConfigure(for: permission)
@@ -223,13 +223,13 @@ import UIKit
             return cell
         }
 
-        public override func tableView(_ tableView: UITableView, viewForHeaderInSection _: Int) -> UIView? {
+        override public func tableView(_ tableView: UITableView, viewForHeaderInSection _: Int) -> UIView? {
             let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: SPPermissionsListHeaderView.id) as! SPPermissionsListHeaderView
             view.titleLabel.text = headerText
             return view
         }
 
-        public override func tableView(_ tableView: UITableView, viewForFooterInSection _: Int) -> UIView? {
+        override public func tableView(_ tableView: UITableView, viewForFooterInSection _: Int) -> UIView? {
             let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: SPPermissionsListFooterCommentView.id) as! SPPermissionsListFooterCommentView
             view.titleLabel.text = footerText
             return view

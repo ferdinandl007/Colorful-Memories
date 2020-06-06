@@ -51,7 +51,7 @@ class Networking {
 
             let base64Image = image.toBase64()! // Final image selected by the user
             let parameters: [String: Any] = [
-                "render_factor": 32,
+                "render_factor": RemoteConfigManager.instance.getRenderFactor(),
                 "encoded_img": base64Image,
             ]
             let url = RemoteConfigManager.instance.getColourizeAPI()

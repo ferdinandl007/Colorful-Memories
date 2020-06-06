@@ -74,7 +74,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FirebasePerformance.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FirebaseRemoteConfig.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GTMSessionFetcher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -90,6 +100,11 @@
 			<false/>
 		</dict>
 		<key>GoogleDataTransportCCTSupport.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleToolboxForMac.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

@@ -17,7 +17,7 @@ public class IAPManager: NSObject {
 
     var products = [SKProduct]()
 
-    private override init() {
+    override private init() {
         super.init()
     }
 

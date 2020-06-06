@@ -37,13 +37,13 @@ open class YPPhotoFiltersVC: UIViewController, IsMediaFilterVC, UIGestureRecogni
 
     fileprivate var v = YPFiltersView()
 
-    open override var prefersStatusBarHidden: Bool { return YPConfig.hidesStatusBar }
-    open override func loadView() { view = v }
+    override open var prefersStatusBarHidden: Bool { return YPConfig.hidesStatusBar }
+    override open func loadView() { view = v }
     public required init?(coder _: NSCoder) { fatalError("init(coder:) has not been implemented") }
 
     // MARK: - Life Cycle ♻️
 
-    open override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
 
         // Setup of main image an thumbnail images

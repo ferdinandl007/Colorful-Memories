@@ -77,7 +77,7 @@ import UIKit
             fatalError("init(coder:) has not been implemented")
         }
 
-        public override func viewDidLoad() {
+        override public func viewDidLoad() {
             super.viewDidLoad()
             view.addSubview(backgroundView)
 
@@ -102,7 +102,7 @@ import UIKit
             NotificationCenter.default.addObserver(self, selector: #selector(applicationDidBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
         }
 
-        public override func viewDidLayoutSubviews() {
+        override public func viewDidLayoutSubviews() {
             super.viewDidLayoutSubviews()
             backgroundView.frame = view.bounds
             dialogView.layout(in: view)
@@ -166,7 +166,7 @@ import UIKit
             dismiss(withDialog: true)
         }
 
-        public override func dismiss(animated flag: Bool, completion: (() -> Void)? = nil) {
+        override public func dismiss(animated flag: Bool, completion: (() -> Void)? = nil) {
             super.dismiss(animated: flag, completion: {
                 completion?()
                 let ids: [Int] = self.permissions.map { $0.rawValue }

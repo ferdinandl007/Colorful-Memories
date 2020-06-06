@@ -42,7 +42,7 @@ public class YPVideoFiltersVC: UIViewController, IsMediaFilterVC {
 
     // MARK: - Live cycle
 
-    public override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = YPConfig.colors.filterBackgroundColor
@@ -84,7 +84,7 @@ public class YPVideoFiltersVC: UIViewController, IsMediaFilterVC {
         setupRightBarButtonItem()
     }
 
-    public override func viewDidAppear(_ animated: Bool) {
+    override public func viewDidAppear(_ animated: Bool) {
         trimmerView.asset = inputAsset
         trimmerView.delegate = self
 
@@ -97,7 +97,7 @@ public class YPVideoFiltersVC: UIViewController, IsMediaFilterVC {
         super.viewDidAppear(animated)
     }
 
-    public override func viewWillDisappear(_ animated: Bool) {
+    override public func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         stopPlaybackTimeChecker()
         videoView.stop()

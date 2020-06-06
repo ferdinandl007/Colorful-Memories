@@ -54,7 +54,7 @@ public final class ImageScannerController: UINavigationController {
         return view
     }()
 
-    public override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+    override public var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .portrait
     }
 
@@ -99,7 +99,7 @@ public final class ImageScannerController: UINavigationController {
         }
     }
 
-    public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+    override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
 

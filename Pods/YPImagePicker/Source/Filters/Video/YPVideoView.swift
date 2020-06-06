@@ -27,7 +27,7 @@ public class YPVideoView: UIView {
         return playerLayer.player!
     }
 
-    public override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
@@ -63,7 +63,7 @@ public class YPVideoView: UIView {
         playerView.layer.addSublayer(playerLayer)
     }
 
-    public override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         playerLayer.frame = playerView.frame
     }

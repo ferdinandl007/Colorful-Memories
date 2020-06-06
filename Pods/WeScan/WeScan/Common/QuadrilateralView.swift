@@ -118,7 +118,7 @@ final class QuadrilateralView: UIView {
         addSubview(bottomLeftCornerView)
     }
 
-    public override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         guard quadLayer.frame != bounds else {
             return

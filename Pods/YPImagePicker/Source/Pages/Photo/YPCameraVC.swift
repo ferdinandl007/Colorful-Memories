@@ -16,7 +16,7 @@ public class YPCameraVC: UIViewController, UIGestureRecognizerDelegate, YPPermis
     let v: YPCameraView!
     var isInited = false
     var videoZoomFactor: CGFloat = 1.0
-    public override func loadView() { view = v }
+    override public func loadView() { view = v }
 
     public required init() {
         v = YPCameraView(overlayView: YPConfig.overlayView)
@@ -34,7 +34,7 @@ public class YPCameraVC: UIViewController, UIGestureRecognizerDelegate, YPPermis
         YPDeviceOrientationHelper.shared.stopDeviceOrientationNotifier()
     }
 
-    public override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         v.flashButton.isHidden = true
         v.flashButton.addTarget(self, action: #selector(flashButtonTapped), for: .touchUpInside)

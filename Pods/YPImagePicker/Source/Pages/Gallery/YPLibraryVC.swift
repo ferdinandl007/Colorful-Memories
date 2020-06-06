@@ -91,12 +91,12 @@ public class YPLibraryVC: UIViewController, YPPermissionCheckable {
 
     // MARK: - View Lifecycle
 
-    public override func loadView() {
+    override public func loadView() {
         v = YPLibraryView.xibView()
         view = v
     }
 
-    public override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
 
         // When crop area changes in multiple selection mode,
@@ -111,7 +111,7 @@ public class YPLibraryVC: UIViewController, YPPermissionCheckable {
         }
     }
 
-    public override func viewDidAppear(_ animated: Bool) {
+    override public func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
         v.assetViewContainer.squareCropButton
@@ -136,7 +136,7 @@ public class YPLibraryVC: UIViewController, YPPermissionCheckable {
         }
     }
 
-    public override func viewWillDisappear(_ animated: Bool) {
+    override public func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
 
         pausePlayer()

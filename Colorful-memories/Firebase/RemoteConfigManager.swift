@@ -17,6 +17,7 @@ class RemoteConfigManager {
     enum keys: String {
         case colourAPI
         case prossTime
+        case render_factor
     }
 
     private init() {
@@ -31,6 +32,7 @@ class RemoteConfigManager {
         let appDefaults: [String: Any?] = [
             keys.colourAPI.rawValue: "https://colourize.cf/images/predict",
             keys.prossTime.rawValue: "0.6",
+            keys.render_factor.rawValue: 35,
         ]
         remoteConfig.setDefaults(appDefaults as? [String: NSObject])
     }
@@ -61,5 +63,10 @@ class RemoteConfigManager {
     func getProcessingTime() -> Double {
         let timeStr = remoteConfig[keys.prossTime.rawValue].stringValue ?? "0.6"
         return Double(timeStr) ?? 0.6
+    }
+
+    func getRenderFactor() -> Int {
+        let timeStr = remoteConfig[keys.prossTime.rawValue].stringValue ?? "35"
+        return Int(timeStr) ?? 35
     }
 }

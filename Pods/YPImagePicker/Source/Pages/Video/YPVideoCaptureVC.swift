@@ -36,9 +36,9 @@ public class YPVideoCaptureVC: UIViewController, YPPermissionCheckable {
 
     // MARK: - View LifeCycle
 
-    public override func loadView() { view = v }
+    override public func loadView() { view = v }
 
-    public override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         v.timeElapsedLabel.isHidden = false // Show the time elapsed label since we're in the video screen.
         setupButtons()

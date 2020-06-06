@@ -150,10 +150,12 @@ extension ImagesSectionController: ActionsCellDelicate {
         navigationController.overrideUserInterfaceStyle = .light
         vc.currentInteraction = section
         vc.present(navigationController, animated: true, completion: nil)
+        Logging.usedImageEditor()
     }
 
     func save() {
         UIImageWriteToSavedPhotosAlbum(model.image, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+        Logging.savedImage()
     }
 
     func share() {
@@ -166,6 +168,7 @@ extension ImagesSectionController: ActionsCellDelicate {
             popoverController.permittedArrowDirections = UIPopoverArrowDirection(rawValue: 0)
         }
         viewController?.present(activityViewController, animated: true, completion: nil)
+        Logging.sharedImage()
     }
 
     func trash() {

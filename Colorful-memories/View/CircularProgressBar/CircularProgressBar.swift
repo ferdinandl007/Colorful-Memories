@@ -88,33 +88,7 @@ class CircularProgressBar: UIView {
             self.configLabelPercent()
             self.configLabelComplete()
         }
-
-        /* let context = ["progress" : progress]
-         let timer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(updateProgress), userInfo: context, repeats: true)
-         //timer.fire()
-         RunLoop.main.add(timer, forMode: .common) */
     }
-
-    /*@objc func updateProgress(timer: Timer) {
-         guard let context = timer.userInfo as? [String: Double] else { return }
-         let progress : Double = context["progress"]!
-
-         DispatchQueue.main.async {
-             print(self.currentTime)
-             if self.currentTime >= 2{
-                 timer.invalidate()
-             } else {
-                 self.currentTime += 0.05
-                 let percent = self.currentTime/2 * 100
-
-                 self.label.text = "\(Int(progress * percent))"
-                 self.setForegroundLayerColorForSafePercent()
-                 self.configLabel()
-                 self.configLabelPercent()
-                 self.configLabelComplete()
-             }
-         }
-     }*/
 
     // MARK: Private
 

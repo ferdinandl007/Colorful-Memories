@@ -41,16 +41,16 @@ class Logging {
     static func library() {
         Analytics.logEvent("Library", parameters: nil)
     }
-    
+
     static func usedImageEditor() {
         Analytics.logEvent("usedImageEditor", parameters: nil)
     }
-    
+
     static func savedImage() {
         Analytics.logEvent("saved_image", parameters: nil)
     }
-    
+
     static func sharedImage() {
-         Analytics.logEvent("sharedImage", parameters: nil)
+        Analytics.logEvent("sharedImage", parameters: nil)
     }
 }

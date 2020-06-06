@@ -20,7 +20,7 @@ open class YPPickerVC: YPBottomPager, YPBottomPagerDelegate {
     var initialStatusBarHidden = false
     weak var imagePickerDelegate: ImagePickerDelegate?
 
-    open override var prefersStatusBarHidden: Bool {
+    override open var prefersStatusBarHidden: Bool {
         return (shouldHideStatusBar || initialStatusBarHidden) && YPConfig.hidesStatusBar
     }
 
@@ -42,7 +42,7 @@ open class YPPickerVC: YPBottomPager, YPBottomPagerDelegate {
 
     var capturedImage: UIImage?
 
-    open override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = YPConfig.colors.safeAreaBackgroundColor
@@ -121,14 +121,14 @@ open class YPPickerVC: YPBottomPager, YPBottomPagerDelegate {
         YPHelper.changeBackButtonTitle(self)
     }
 
-    open override func viewWillAppear(_ animated: Bool) {
+    override open func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         cameraVC?.v.shotButton.isEnabled = true
 
         updateMode(with: currentController)
     }
 
-    open override func viewDidAppear(_ animated: Bool) {
+    override open func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         shouldHideStatusBar = true
         initialStatusBarHidden = true
@@ -185,7 +185,7 @@ open class YPPickerVC: YPBottomPager, YPBottomPagerDelegate {
         }
     }
 
-    open override func viewWillDisappear(_ animated: Bool) {
+    override open func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         shouldHideStatusBar = false
         stopAll()
